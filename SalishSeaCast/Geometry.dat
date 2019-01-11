@@ -1,0 +1,49 @@
+!MOHID Studio Sample Data File
+!This file contains the most common options.
+!MODULE: Geometry
+!Please complete and comment/uncomment for your specific needs
+!
+!
+!
+MINIMUMDEPTH              : 0.1
+FACESOPTION               : 2
+!SIGMAMINIMUMDEPTH                  : 0.1
+!Sigma Domain
+!<begindomain>
+!ID                        : 1
+!TYPE                      : SIGMA
+!LAYERS                    : 31
+!LAYERTHICKNESS            : 4.0000 4.0000 4.0000 4.0000 4.0000 4.0000 4.0000 4.0000 4.0000 4.0000 4.0000 4.0000 4.0000 4.0000 4.0000 4.0000 4.0000 4.2500 4.5000 4.5000 4.5000 10.5833 16.6667 16.6670 16.6660 16.6670 16.6670 16.6660 16.6670 16.6670 0 0
+!DOMAINDEPTH               : -231.667
+!TOLERANCEDEPTH                 : 0
+!<enddomain>
+
+!WINDOW                    : 0
+!Cartesian Domain
+<begindomain>
+ID                        : 1
+TYPE                      : CARTESIAN
+LAYERS                    : 40
+LAYERTHICKNESS            : 32 32 32 32 32 32 32 32 31 31 31 30 28 25 21 16 11 7 5 3 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0.5
+
+DOMAINDEPTH               : 516.5
+!MININITIALLAYERTHICKNESS  : 2
+!LAGRANGIAN                : 1
+
+
+!MINEVOLVELAYERTHICKNESS   : 0.5
+
+<enddomain>
+
+!Cartesian Top - MOHID Land
+!<begindomain>
+!ID                      : 1
+!TYPE                    : CARTESIANTOP
+!LAYERS                  : 10
+!LAYERTHICKNESS          : 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3
+!<enddomain>
+
+!
+!For more information about MOHID please visit MOHID's forum: http://www.mohid.com/forum/
+!Copyright (C) 2012. Action Modulers. http://www.actionmodulers.com
+!

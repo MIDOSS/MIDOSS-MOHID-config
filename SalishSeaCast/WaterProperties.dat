@@ -1,0 +1,50 @@
+!MOHID Studio Sample Data File
+!This file contains the most common options.
+!MODULE: WaterProperties
+!Please complete and comment/uncomment for your specific needs
+!
+
+<beginproperty>
+NAME                      : temperature
+UNITS                     : ?C
+DESCRIPTION               : temperature
+DEFAULTVALUE              : 10
+ADVECTION_DIFFUSION       : 0
+INITIALIZATION_METHOD     : CONSTANT
+<endproperty>
+
+<beginproperty>
+NAME                      : cohesive sediment
+UNITS                     : mg/l
+DESCRIPTION               : cohesive sediment
+DEFAULTVALUE              : 1
+ADVECTION_DIFFUSION       : 0
+INITIALIZATION_METHOD     : CONSTANT
+<endproperty>
+
+!
+!Output Options
+!OUTPUT_TIME               : 0 3600
+!TIME_SERIE                : 1
+!TIME_SERIE_LOCATION       : ..\General Data\TimeSeriesLocation.dat
+
+!A property block example
+<beginproperty>
+NAME                      : salinity
+UNITS                     : psu
+DESCRIPTION               : salinity
+DEFAULTVALUE              : 35
+INITIALIZATION_METHOD     : CONSTANT
+ADVECTION_DIFFUSION       : 0
+!DISCHARGES                : 0
+!BOUNDARY_CONDITION        : 1
+!OUTPUT_HDF                : 1
+!TIME_SERIE                : 1
+<endproperty>
+
+
+
+!
+!For more information about MOHID please visit MOHID's forum: http://www.mohid.com/forum/
+!Copyright (C) 2012. Action Modulers. http://www.actionmodulers.com
+!
