@@ -1,0 +1,34 @@
+run_id: MarathassaConstTS
+account: def-allen
+walltime: 1:30:00
+
+paths:
+  mohid repo: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID/
+  runs directory: $SCRATCH/MIDOSS/runs/
+
+forcing:
+  winds.hdf5: $PROJECT/MIDOSS/forcing/SalishSeaShihan/SalishSea/wind/st_georgia_wind.hdf5
+  currents.hdf5: $PROJECT/MIDOSS/forcing/SalishSeaShihan/SalishSea/current/St_georgia.hdf5
+  water_levels.hdf5: $PROJECT/MIDOSS/forcing/SalishSeaShihan/SalishSea/current/St_georgia.hdf5
+
+bathymetry: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/SalishSeaCast/SalishSeaCast_bathymetry.dat
+
+run data files:
+  IN_MODEL: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/MarathassaConstTS/Model.dat
+  PARTIC_DATA: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/MarathassaConstTS/Lagrangian.dat
+  DOMAIN: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/SalishSeaCast/Geometry.dat
+  SURF_DAT: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/SalishSeaCast/Atmosphere.dat
+  IN_DAD3D: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/SalishSeaCast/Hydrodynamic.dat
+  BOT_DAT: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/SalishSeaCast/InterfaceSedimentWater.dat
+  AIRW_DAT: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/SalishSeaCast/InterfaceWaterAir.dat
+  IN_TIDES: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/SalishSeaCast/Tide.dat
+  IN_TURB: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/SalishSeaCast/Turbulence.dat
+  DISPQUAL: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/SalishSeaCast/WaterProperties.dat
+  WAVES_DAT: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/SalishSeaCast/Waves.dat
+
+vcs revisions:
+  hg:
+    - $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config
+    - $PROJECT/$USER/MIDOSS/MOHID-Cmd
+    - $PROJECT/$USER/MIDOSS/NEMO-Cmd
+    - $PROJECT/$USER/MIDOSS/moad_tools

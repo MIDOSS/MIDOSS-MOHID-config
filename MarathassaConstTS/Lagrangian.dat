@@ -1,0 +1,203 @@
+ASSOCIATE_BEACH_PROB      : 1
+DEFAULT_BEACHING_PROB     : 0.5
+BEACHING_LIMIT            : 5
+
+OUTPUT_TIME               : 0 3600
+OUTPUT_CONC               : 1
+!OUTPUT_CONC               : 1
+DT_PARTIC                 : 1200
+<BeginOrigin>
+
+ORIGIN_NAME               : OilSpill
+
+GROUP_ID                  : 1
+
+NBR_PARTIC                : 500
+!NBR_PARTIC                : 33
+EMISSION_SPATIAL          : Accident
+EMISSION_TEMPORAL         : Instantaneous
+
+!EMISSION_SPATIAL          : Point
+!EMISSION_TEMPORAL         : Continuous
+
+!START_PARTIC_EMIT         : 2010 1 3 1 0 0
+!DT_EMIT                   : 1200
+!STOP_PARTIC_EMIT          : 2010 1 3 5 0 0
+
+!VOLFAC                    : 100
+!FLOW                      : 0.033
+POINT_VOLUME              : 50
+ACCIDENT_METHOD           : 1
+!VOLUME_INCREASE           : Velocity
+!SURFACE_EMISSION          : 1
+FLOAT                     : 1
+!
+!DENSITY_METHOD            : 1
+!
+MOVEMENT                  : SullivanAllen
+VARVELHX                  : 0.02
+VARVELH                   : 0.0
+
+!TURB_V                    : Profile
+TURB_V                    : Constant
+VARVELVX                  : 0.001
+VARVELV                   : 0.0
+
+!POSITION_COORDINATES      : -123.2 49.3
+POSITION_COORDINATES      : -123.349 49.051
+!POSITION_COORDINATES      : -124.6154 48.4999
+DEPTH_METERS              : 0
+
+ADVECTION                 : 1
+!WINDCOEF                  : 0.025
+THEORIC_AREA              : 1
+BEACHING                  : 1
+ADVECTION_Z               : 0
+
+!COMPUTE_BUOYANCY          : 1
+METHOD_FLOAT_VEL          : 1
+AREA_METHOD               : 3
+!DROPLETS_D50              : 50e-20
+!DROPLETS_D50              : 50e-30
+!CDISP_OIL_OFF             : 1.
+METHOD_BW_DROPLETS_DIAMETER :  4
+DENSITY_METHOD            : 1
+
+!SEDIMENTATION             : Stokes
+!D50_DENSITY               : 920.
+
+
+
+WINDDRIFTCORRECTION       : 1
+WINDDRIFTANGLE            : 30.
+WINDCOEF                  : 0.02
+
+!
+<<BeginOil>>
+DT_OIL_INTPROCESSES       : 120
+ASPHALTENECONTENT         : 1.27
+WAXCONTENT                : 2.9
+RESINCONTENT              : 6.1
+SATURATECONTENT           : 75.0
+
+
+OIL_SPREADING             : 1
+SPREADINGMETHOD           : ThicknessGradient
+
+USERCOEFVELMANCHA         : 10
+OIL_BIODEGRADATION        : 1
+BIOCOE                    : 0.005 0.004 0.01 0.05 0.1
+!ANALYTEPERCENTAGE         : 49 10 10 14 17
+ANALYTEPERCENTAGE         : 50 17.9 18 12 2.1
+OIL_EVAPORATION           : 1
+EVAPORATIONMETHOD         : EvaporativeExposure
+
+
+OIL_DISPERSION            : 1
+
+DISPERSIONMETHOD          : NewDispersion
+!DISPERSIONMETHOD          : NewDispersion
+LIMITDIAMETER             : 1.01e-4
+OIL_EMULSIFICATION        : 1
+!EMULSIFICATIONMETHOD      : Fingas
+
+EMULSIFICATIONMETHOD      : Mackay
+EMULSPARAMETER            : 1.1E-6
+
+OILTYPE                   : Crude
+API                       : 27.6
+
+POURPOINT                 : -31.7
+CEMULS                    : 1.0E-6
+
+MAXVWATERCONTENT          : 70
+!MAXVWATERCONTENT          : 47
+TEMPVISCREF               : 15.
+VISCREF                   : 26.
+
+OWINTERFACIALTENSION      : 21
+OIL_TIMESERIE             : OilOutput
+
+
+FINGAS_EVAP_EQTYPE        : Logarithmic
+!FINGAS_EVAP_EQTYPE        : SquareRoot
+FINGAS_EVAP_EMP_DATA      : 0
+!FINGAS_EVAP_CONST1        : 2.67
+!FINGAS_EVAP_CONST2        : 0.06
+PERC_MASSDIST180          : 22
+OIL_SEDIMENTATION         : 0
+OIL_DISSOLUTION           : 1
+
+
+
+
+<<EndOil>>
+
+<<BeginProperty>>
+NAME                      : oil
+UNITS                     : m3
+AMBIENT_CONC              : 0
+!CONC_VARIABLE             : 1
+CONCENTRATION             : 1
+<<EndProperty>>
+
+<EndOrigin>
+!Compute Options
+!DT_PARTIC                 : 30
+
+!Output Options
+!OUTPUT_TIME               : 0 3600.
+!OUTPUT_CONC               : 1
+!TIME_SERIE                : 0
+!<BeginOrigin>
+!ORIGIN_NAME               : Discharge
+
+!GROUP_ID                  : 1
+
+!EMISSION_SPATIAL          : Point
+!EMISSION_TEMPORAL         : Continuous
+
+!DT_EMIT                   : 60
+!NBR_PARTIC                : 100
+!FLOW                      : 1
+
+!MOVEMENT                  : NotRandom
+!VARVELHX                  : 0.0015
+!VARVELH                   : 0.003
+!POSITION_COORDINATES      : -63.549 44.6370
+!DEPTH_METERS              : 0.
+!<EndOrigin>
+
+!Origin Block
+!<BeginOrigin>
+!ORIGIN_NAME               : Origin 1
+!OLD                       : 0
+!EMISSION_SPATIAL          : Point
+!EMISSION_TEMPORAL         : Continuous
+!DT_EMIT                   : 5
+!FLOW                      : 2.5
+!FLOAT                     : 0
+!MOVEMENT                  : SullivanAllen
+!VARVELHX                  : 0.0015
+!VARVELH                   : 0.003
+!TURB_V                    : Profile
+!POSITION_CELLS            : 10.0  11.5
+!DEPTH_CELLS               : 0.5
+!TVOL200                 : 3600.
+!VOLUME_INCREASE         : Double
+!VOLFAC                  : 5e4
+!Lagrangian Property Block
+!<<BeginProperty>>
+!NAME                      : fecal coliforms
+!UNITS                     : 100un/ml
+!CONCENTRATION             : 1e6
+!T90                       : 7200.
+!AMBIENT_CONC              : 0.0
+!<<EndProperty>>
+!<EndOrigin>
+
+
+!
+!For more information about MOHID please visit MOHID's forum: http://www.mohid.com/forum/
+!Copyright (C) 2012. Action Modulers. http://www.actionmodulers.com
+!
