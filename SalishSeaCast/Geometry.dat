@@ -24,9 +24,8 @@ FACESOPTION               : 2
 ID                        : 1
 TYPE                      : CARTESIAN
 LAYERS                    : 40
-LAYERTHICKNESS            : 32 32 32 32 32 32 32 32 31 31 31 30 28 25 21 16 11 7 5 3 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0.5
-
-DOMAINDEPTH               : 516.5
+LAYERTHICKNESS            : 27 27 27 27 27 27 27 27 27 26 26 24 23 22 18 14 10 6 4 3 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+DOMAINDEPTH               : 440
 !MININITIALLAYERTHICKNESS  : 2
 !LAGRANGIAN                : 1
 
