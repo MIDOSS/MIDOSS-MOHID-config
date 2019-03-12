@@ -3,7 +3,7 @@ account: def-allen
 walltime: 1:30:00
 
 paths:
-  mohid repo: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID/
+  mohid repo: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-CODE/
   runs directory: $SCRATCH/MIDOSS/runs/
 
 forcing:
