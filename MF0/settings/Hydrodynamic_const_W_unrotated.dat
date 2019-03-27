@@ -1,0 +1,70 @@
+!!MOHID Studio Sample Data File
+!This file contains the most common options.
+!MODULE: Hydrodynamic
+!Please complete and comment/uncomment for your specific needs
+!
+!
+!
+!Compute Options
+!TIDE                      : 0
+!WIND                      : 0
+!WATER_DISCHARGES          : 0
+!BAROCLINIC                : 0
+Rotation                   : 0
+
+!Start / Continuous Computation
+!CONTINUOUS                : 0
+!SLOWSTART                 : 7200.0
+!INITIAL_ELEVATION         : 0
+!INITIAL_ELEVATION_VALUE   : 0
+!RESIDUAL                  : 1
+!OUTPUT_TIME               : 0 3600
+!ATM_PRESSURE              : 1
+!ATM_PRESSURE_TYPE         : 1
+EVOLUTION                 : Imposed Solution
+!NO_INTERPOLATION          : 1
+
+<begin_waterlevel>
+NAME                      : water level
+UNITS                     : m
+DIMENSION                 : 2D
+DEFAULTVALUE              : 0
+INITIALIZATION_METHOD     : hdf
+FILE_IN_TIME              : hdf
+FILENAME                  : ./water_levels.hdf5
+<end_waterlevel>
+
+<begin_velocity_u>
+NAME                      : velocity U
+UNITS                     : m/s
+DIMENSION                 : 3D
+DEFAULTVALUE              : 0
+INITIALIZATION_METHOD     : hdf
+FILE_IN_TIME              : hdf
+FILENAME                  : ./currents.hdf5
+<end_velocity_u>
+
+<begin_velocity_v>
+NAME                      : velocity V
+UNITS                     : m/s
+DIMENSION                 : 3D
+DEFAULTVALUE              : 0
+INITIALIZATION_METHOD     : hdf
+FILE_IN_TIME              : hdf
+FILENAME                  : ./currents.hdf5
+<end_velocity_v>
+
+<begin_velocity_w>
+NAME                      : velocity W
+UNITS                     : m/s
+DIMENSION                 : 3D
+DEFAULTVALUE              : 0
+INITIALIZATION_METHOD     : CONSTANT
+<end_velocity_w>
+
+
+
+!
+!For more information about MOHID please visit MOHID's forum: http://www.mohid.com/forum/
+!Copyright (C) 2012. Action Modulers. http://www.actionmodulers.com
+!
