@@ -1,0 +1,38 @@
+run_id: SOGa_01dec17_MF0_1000m3_7days_unrotated_smalldt_vvl
+account: def-allen
+walltime: 2:00:00
+
+paths:
+  mohid repo: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-CODE/
+  runs directory: $SCRATCH/MIDOSS/runs/MF0/
+
+forcing:
+  winds.hdf5: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/winds.hdf5
+  currents.hdf5: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/currents_unrotated.hdf5
+  water_levels.hdf5: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/t.hdf5
+  temperature.hdf5: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/t.hdf5
+  salinity.hdf5: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/t.hdf5
+  ww3.hdf5: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/ww3.hdf5
+  e3t.hdf5: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/e3t.hdf5
+
+bathymetry: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/settings/Bathymetry.dat
+
+run data files:
+  IN_MODEL: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/Model_lowdt.dat
+  PARTIC_DATA: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/Lagrangian.dat
+  DOMAIN: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/settings/Geometry.dat
+  SURF_DAT: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/settings/Atmosphere.dat
+  IN_DAD3D: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/settings/Hydrodynamic.dat
+  BOT_DAT: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/settings/InterfaceSedimentWater.dat
+  AIRW_DAT: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/settings/InterfaceWaterAir.dat
+  IN_TIDES: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/settings/Tide.dat
+  IN_TURB: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/settings/Turbulence.dat
+  DISPQUAL: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/settings/WaterProperties.dat
+  WAVES_DAT: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/Waves.dat
+
+vcs revisions:
+  hg:
+    - $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config
+    - $PROJECT/$USER/MIDOSS/MOHID-Cmd
+    - $PROJECT/$USER/MIDOSS/NEMO-Cmd
+    - $PROJECT/$USER/MIDOSS/moad_tools
