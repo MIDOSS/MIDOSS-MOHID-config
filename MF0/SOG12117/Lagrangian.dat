@@ -5,7 +5,7 @@ BEACHING_LIMIT            : 5
 !OUTPUT_TIME               : 0 3600
 OUTPUT_TIME               : 0 1200
 OUTPUT_CONC               : 1
-DT_PARTIC                 : 1200
+DT_PARTIC                 : 3600
 <BeginOrigin>
 
 ORIGIN_NAME               : OilSpill
