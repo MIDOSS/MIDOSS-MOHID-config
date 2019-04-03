@@ -10,6 +10,7 @@
 !WIND                      : 0
 !WATER_DISCHARGES          : 0
 !BAROCLINIC                : 0
+Rotation                   : 0
 
 !Start / Continuous Computation
 !CONTINUOUS                : 0
