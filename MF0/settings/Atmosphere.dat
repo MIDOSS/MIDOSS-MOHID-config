@@ -3,7 +3,7 @@
 !MODULE: Atmosphere
 !Please complete and comment/uncomment for your specific needs
 !
-!NO_INTERPOLATION          : 1
+NO_INTERPOLATION          : 0
 !RUGOSITY                  : 0.0025
 !OUTPUT_TIME               : 0. 7200
 
