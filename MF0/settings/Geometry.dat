@@ -19,7 +19,6 @@ LAYERS                    : 40
 LAYERTHICKNESS            : 27 27 27 27 27 27 27 27 27 26 26 24 23 22 18 14 10 6 4 3 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 DOMAINDEPTH               : 428
 ImposedVVL                : 1
-ImposedVVL                : 1
 FILENAME                  : ./e3t.hdf5
 
 <enddomain>
