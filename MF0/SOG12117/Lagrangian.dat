@@ -50,8 +50,7 @@ WINDCOEF                  : 0.02
 
 !
 <<BeginOil>>
-!DT_OIL_INTPROCESSES       : 60
-DT_OIL_INTPROCESSES       : 1200
+DT_OIL_INTPROCESSES       : 60
 ASPHALTENECONTENT         : 1.27
 WAXCONTENT                : 2.9
 RESINCONTENT              : 6.1
