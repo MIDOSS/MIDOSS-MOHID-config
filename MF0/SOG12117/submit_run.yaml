@@ -1,6 +1,6 @@
-run_id: SOGa_01dec17_MF0_1000m3_7days_unrotated_smalldt_vvl_masked
+run_id: SOGa_01dec17_MF0_1000m3_7days_unrotated_smalldt_hi
 account: def-allen
-walltime: 2:30:00
+walltime: 1:50:00
 
 paths:
   mohid repo: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-CODE/
