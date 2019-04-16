@@ -12,7 +12,7 @@ ORIGIN_NAME               : OilSpill
 
 GROUP_ID                  : 1
 
-NBR_PARTIC                : 500
+NBR_PARTIC                : 2000
 EMISSION_SPATIAL          : Accident
 EMISSION_TEMPORAL         : Instantaneous
 
