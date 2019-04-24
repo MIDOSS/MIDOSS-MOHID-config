@@ -24,9 +24,7 @@ NAME                      : wind velocity X
 UNITS                     : m/s
 DESCRIPTION               : wind velocity X
 DEFAULTVALUE              : 0.
-
-FILE_IN_TIME              : HDF
-FILENAME                  : ./winds.hdf5
+INITIALIZATION_METHOD     : CONSTANT
 OUTPUT_HDF                : 0
 <endproperty>
 
@@ -35,9 +33,7 @@ NAME                      : wind velocity Y
 UNITS                     : m/s
 DESCRIPTION               : wind velocity Y
 DEFAULTVALUE              : 0.
-
-FILE_IN_TIME              : HDF
-FILENAME                  : ./winds.hdf5
+INITIALIZATION_METHOD     : CONSTANT
 OUTPUT_HDF                : 0
 <endproperty>
 !!!!!!!!!!!!!!!!!!!!!
