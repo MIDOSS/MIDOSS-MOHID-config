@@ -1,0 +1,113 @@
+! Alaska North Shore Oil
+ASSOCIATE_BEACH_PROB      : 1
+DEFAULT_BEACHING_PROB     : 0.5
+BEACHING_LIMIT            : 5
+!OUTPUT_TIME               : 0 3600
+OUTPUT_TIME               : 0 1200
+OUTPUT_CONC               : 1
+DT_PARTIC                 : 3600
+<BeginOrigin>
+
+ORIGIN_NAME               : OilSpill
+
+GROUP_ID                  : 1
+
+NBR_PARTIC                : 2000
+EMISSION_SPATIAL          : Accident
+EMISSION_TEMPORAL         : Instantaneous
+
+POINT_VOLUME              : 1000
+ACCIDENT_METHOD           : 1
+FLOAT                     : 0
+! keeps all the particles on the surface
+! change to 0
+
+MOVEMENT                  : SullivanAllen
+VARVELHX                  : 0.02
+VARVELH                   : 0.0
+
+TURB_V                    : Constant
+VARVELVX                  : 0.001
+VARVELV                   : 0.0
+
+POSITION_COORDINATES       : -123.66905975341797 49.21060562133789
+DEPTH_FROM_FREE_SURFACE   : 0
+
+ADVECTION                 : 1
+THEORIC_AREA              : 1
+BEACHING                  : 1
+ADVECTION_Z               : 1
+
+
+METHOD_FLOAT_VEL          : 1
+AREA_METHOD               : 3
+METHOD_BW_DROPLETS_DIAMETER :  4
+DENSITY_METHOD            : 1
+
+WINDDRIFTCORRECTION       : 1
+WINDDRIFTANGLE            : 30.
+WINDCOEF                  : 0.02
+
+!
+<<BeginOil>>
+DT_OIL_INTPROCESSES       : 60
+ASPHALTENECONTENT         : 1.27
+WAXCONTENT                : 2.9
+RESINCONTENT              : 6.1
+SATURATECONTENT           : 75.0
+
+
+OIL_SPREADING             : 1
+SPREADINGMETHOD           : ThicknessGradient
+
+USERCOEFVELMANCHA         : 10
+OIL_BIODEGRADATION        : 0
+BIOCOE                    : 0.005 0.004 0.01 0.05 0.1
+ANALYTEPERCENTAGE         : 50 17.9 18 12 2.1
+OIL_EVAPORATION           : 1
+EVAPORATIONMETHOD         : EvaporativeExposure
+
+OIL_DISPERSION            : 1
+DISPERSIONMETHOD          : Delvigne
+OIL_EMULSIFICATION        : 1
+
+EMULSIFICATIONMETHOD      : Mackay
+EMULSPARAMETER            : 1.1E-6
+
+OILTYPE                   : Crude
+API                       : 27.6
+
+POURPOINT                 : -31.7
+CEMULS                    : 1.0E-6
+
+MAXVWATERCONTENT          : 70
+TEMPVISCREF               : 15.
+VISCREF                   : 26.
+
+OWINTERFACIALTENSION      : 21
+OIL_TIMESERIE             : OilOutput
+
+
+FINGAS_EVAP_EQTYPE        : Logarithmic
+FINGAS_EVAP_EMP_DATA      : 0
+PERC_MASSDIST180          : 22
+OIL_SEDIMENTATION         : 0
+OIL_DISSOLUTION           : 1
+
+<<EndOil>>
+
+<<BeginProperty>>
+NAME                      : oil
+UNITS                     : m3
+AMBIENT_CONC              : 0
+!CONC_VARIABLE             : 1
+CONCENTRATION             : 1
+<<EndProperty>>
+
+<EndOrigin>
+
+
+!
+!For more information about MOHID please visit MOHID's forum: http://www.mohid.com/forum/
+!Copyright (C) 2012. Action Modulers. http://www.actionmodulers.com
+!

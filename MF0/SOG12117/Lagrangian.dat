@@ -5,14 +5,14 @@ BEACHING_LIMIT            : 5
 !OUTPUT_TIME               : 0 3600
 OUTPUT_TIME               : 0 1200
 OUTPUT_CONC               : 1
-DT_PARTIC                 : 1200
+DT_PARTIC                 : 3600
 <BeginOrigin>
 
 ORIGIN_NAME               : OilSpill
 
 GROUP_ID                  : 1
 
-NBR_PARTIC                : 500
+NBR_PARTIC                : 2000
 EMISSION_SPATIAL          : Accident
 EMISSION_TEMPORAL         : Instantaneous
 
@@ -50,8 +50,7 @@ WINDCOEF                  : 0.02
 
 !
 <<BeginOil>>
-!DT_OIL_INTPROCESSES       : 60
-DT_OIL_INTPROCESSES       : 1200
+DT_OIL_INTPROCESSES       : 60
 ASPHALTENECONTENT         : 1.27
 WAXCONTENT                : 2.9
 RESINCONTENT              : 6.1
