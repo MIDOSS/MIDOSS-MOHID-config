@@ -1,6 +1,6 @@
-run_id: vvl_ssh2
+run_id: vvl_sshneg2
 account: rrg-allen
-walltime: 1:40:00
+walltime: 2:00:00
 
 paths:
   mohid repo: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-CODE/
