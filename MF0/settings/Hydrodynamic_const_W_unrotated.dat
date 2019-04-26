@@ -28,7 +28,7 @@ NO_INTERPOLATION          : 0
 NAME                      : water level
 UNITS                     : m
 DIMENSION                 : 2D
-DEFAULTVALUE              : 0
+DEFAULTVALUE              : 2
 INITIALIZATION_METHOD     : CONSTANT
 <end_waterlevel>
 
