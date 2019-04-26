@@ -7,28 +7,28 @@ paths:
   runs directory: $SCRATCH/MIDOSS/runs/MF0/
 
 forcing:
-  winds.hdf5: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/winds.hdf5
-  currents.hdf5: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/currents_unrotated.hdf5
-  water_levels.hdf5: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/t.hdf5
-  temperature.hdf5: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/t.hdf5
-  salinity.hdf5: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/t.hdf5
-  ww3.hdf5: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/ww3.hdf5
-  e3t.hdf5: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/e3t.hdf5
+  winds.hdf5: $PROJECT/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/winds.hdf5
+  currents.hdf5: $PROJECT/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/currents_unrotated.hdf5
+  water_levels.hdf5: $PROJECT/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/t.hdf5
+  temperature.hdf5: $PROJECT/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/t.hdf5
+  salinity.hdf5: $PROJECT/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/t.hdf5
+  ww3.hdf5: $PROJECT/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/ww3.hdf5
+  e3t.hdf5: $PROJECT/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/e3t.hdf5
 
-bathymetry: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/settings/Bathymetry.dat
+bathymetry: /home/rmueller/Data/SalishSeaCast/grid/bathymetry_201702_shihan.dat
 
 run data files:
-  IN_MODEL: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/Model_lowdt.dat
-  PARTIC_DATA: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/Lagrangian.dat
-  DOMAIN: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/settings/Geometry.dat
-  SURF_DAT: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/settings/Atmosphere.dat
-  IN_DAD3D: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/settings/Hydrodynamic.dat
-  BOT_DAT: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/settings/InterfaceSedimentWater.dat
-  AIRW_DAT: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/settings/InterfaceWaterAir.dat
-  IN_TIDES: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/settings/Tide.dat
-  IN_TURB: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/settings/Turbulence.dat
-  DISPQUAL: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/settings/WaterProperties.dat
-  WAVES_DAT: /home/abhudia/project/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/Waves.dat
+  PARTIC_DATA: /home/rmueller/project/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/settings/Lagrangian.dat
+  IN_MODEL: /home/rmueller/project/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/settings/Model.dat
+  SURF_DAT:  /home/rmueller/project/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/settings/Atmosphere.dat 
+  DOMAIN: /home/rmueller/project/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/settings/Geometry.dat
+  IN_DAD3D: /home/rmueller/project/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/settings/Hydrodynamic.dat
+  BOT_DAT: /home/rmueller/project/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/settings/InterfaceSedimentWater.dat
+  AIRW_DAT: /home/rmueller/project/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/settings/InterfaceWaterAir.dat
+  IN_TIDES: /home/rmueller/project/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/settings/Tide.dat
+  IN_TURB: /home/rmueller/project/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/settings/Turbulence.dat
+  DISPQUAL: /home/rmueller/project/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/settings/WaterProperties.dat
+  WAVES_DAT: /home/rmueller/project/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/Waves.dat
 
 vcs revisions:
   hg:

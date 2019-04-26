@@ -1,0 +1,27 @@
+IN_BATIM                  : I:\Vancouver 2016\vancouver Harbour MOHID\map\data\ST_georgia_bathymetry_revisit_v02.dat
+ROOT                      : C:\Users\Shihan Li\Documents\Mohid Studio\Projects\st_georgia_nested\res
+ROOT_SRT                  : C:\Users\Shihan Li\Documents\Mohid Studio\Projects\st_georgia_nested\res\Run28\
+SURF_DAT                  : C:\Users\Shihan Li\Documents\Mohid Studio\Projects\st_georgia_nested\data\Atmosphere_28.dat
+SURF_HDF                  : C:\Users\Shihan Li\Documents\Mohid Studio\Projects\st_georgia_nested\res\Atmosphere_28.hdf
+DOMAIN                    : C:\Users\Shihan Li\Documents\Mohid Studio\Projects\st_georgia_nested\data\Geometry_28.dat
+IN_DAD3D                  : C:\Users\Shihan Li\Documents\Mohid Studio\Projects\st_georgia_nested\data\Hydrodynamic_28.dat
+OUT_DESF                  : C:\Users\Shihan Li\Documents\Mohid Studio\Projects\st_georgia_nested\res\Hydrodynamic_28.hdf
+OUT_FIN                   : C:\Users\Shihan Li\Documents\Mohid Studio\Projects\st_georgia_nested\res\Hydrodynamic_28.fin
+BOT_DAT                   : C:\Users\Shihan Li\Documents\Mohid Studio\Projects\st_georgia_nested\data\InterfaceSedimentWater_28.dat
+BOT_HDF                   : C:\Users\Shihan Li\Documents\Mohid Studio\Projects\st_georgia_nested\res\InterfaceSedimentWater_28.hdf
+BOT_FIN                   : C:\Users\Shihan Li\Documents\Mohid Studio\Projects\st_georgia_nested\res\InterfaceSedimentWater_28.fin
+AIRW_DAT                  : C:\Users\Shihan Li\Documents\Mohid Studio\Projects\st_georgia_nested\data\InterfaceWaterAir_28.dat
+AIRW_HDF                  : C:\Users\Shihan Li\Documents\Mohid Studio\Projects\st_georgia_nested\res\InterfaceWaterAir_28.hdf
+AIRW_FIN                  : C:\Users\Shihan Li\Documents\Mohid Studio\Projects\st_georgia_nested\res\InterfaceWaterAir_28.fin
+IN_MODEL                  : C:\Users\Shihan Li\Documents\Mohid Studio\Projects\st_georgia_nested\data\Model_28.dat
+IN_TIDES                  : C:\Users\Shihan Li\Documents\Mohid Studio\Projects\st_georgia_nested\data\Tide_28.dat
+IN_TURB                   : C:\Users\Shihan Li\Documents\Mohid Studio\Projects\st_georgia_nested\data\Turbulence_28.dat
+TURB_HDF                  : C:\Users\Shihan Li\Documents\Mohid Studio\Projects\st_georgia_nested\res\Turbulence_28.hdf
+DISPQUAL                  : C:\Users\Shihan Li\Documents\Mohid Studio\Projects\st_georgia_nested\data\WaterProperties_28.dat
+EUL_HDF                   : C:\Users\Shihan Li\Documents\Mohid Studio\Projects\st_georgia_nested\res\WaterProperties_28.hdf
+EUL_FIN                   : C:\Users\Shihan Li\Documents\Mohid Studio\Projects\st_georgia_nested\res\WaterProperties_28.fin
+PARTIC_DATA               : C:\Users\Shihan Li\Documents\Mohid Studio\Projects\st_georgia_nested\data\Lagrangian_28.dat
+PARTIC_HDF                : C:\Users\Shihan Li\Documents\Mohid Studio\Projects\st_georgia_nested\res\Lagrangian_28.hdf
+PARTIC_FIN                : C:\Users\Shihan Li\Documents\Mohid Studio\Projects\st_georgia_nested\res\Lagrangian_28.fin
+WAVES_DAT                 : C:\Users\Shihan Li\Documents\Mohid Studio\Projects\st_georgia_nested\data\Waves_28.dat
+WAVES_HDF                 : C:\Users\Shihan Li\Documents\Mohid Studio\Projects\st_georgia_nested\res\Waves_28.hdf

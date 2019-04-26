@@ -1,0 +1,20 @@
+!MOHID Studio Sample Data File
+!This file contains the most common options.
+!MODULE: Model
+!Please complete and comment/uncomment for your specific needs
+!
+!
+START                     : 2017 12 01 05 30 0
+END                       : 2017 12 07 22 30 0
+DT                        : 3600
+
+VARIABLEDT                : 0
+OPENMP_NUM_THREADS        : 12
+GMTREFERENCE              : 0
+LAGRANGEANE               : 1
+LAGRANGIAN                : 1
+WAVES                     : 1
+!
+!For more information about MOHID please visit MOHID's forum: http://www.mohid.com/forum/
+!Copyright (C) 2012. Action Modulers. http://www.actionmodulers.com
+!

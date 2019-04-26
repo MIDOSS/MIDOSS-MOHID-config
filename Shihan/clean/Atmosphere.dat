@@ -26,7 +26,7 @@ DESCRIPTION               : wind velocity X
 DEFAULTVALUE              : 0.
 
 FILE_IN_TIME              : HDF
-FILENAME                  : $PROJECT/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/winds.hdf5 
+FILENAME                  : I:\UBC file\winds.hdf5
 OUTPUT_HDF                : 0
 <endproperty>
 
@@ -37,7 +37,7 @@ DESCRIPTION               : wind velocity Y
 DEFAULTVALUE              : 0.
 
 FILE_IN_TIME              : HDF
-FILENAME                  : $PROJECT/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/winds.hdf5
+FILENAME                  : I:\UBC file\winds.hdf5
 OUTPUT_HDF                : 0
 <endproperty>
 !!!!!!!!!!!!!!!!!!!!!

@@ -13,7 +13,7 @@ ADVECTION_DIFFUSION       : 0
 DESCRIPTION               : temperature
 INITIALIZATION_METHOD     : hdf
 FILE_IN_TIME              : hdf
-FILENAME                  : $PROJECT/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/t.hdf5
+FILENAME                  : I:\UBC file\t.hdf5
 <endproperty>
 
 <beginproperty>
@@ -35,8 +35,7 @@ ADVECTION_DIFFUSION       : 0
 DESCRIPTION               : salinity
 INITIALIZATION_METHOD     : hdf
 FILE_IN_TIME              : hdf
-FILENAME                  : $PROJECT/abhudia/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/t.hdf5
-
+FILENAME                  : I:\UBC file\t.hdf5
 <endproperty>
 
 
