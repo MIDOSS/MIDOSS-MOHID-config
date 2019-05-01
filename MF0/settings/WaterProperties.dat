@@ -5,6 +5,18 @@
 !
 
 <beginproperty>
+NAME                      : temperature
+UNITS                     : ?C
+DIMENSION                 : 3D
+DEFAULTVALUE              : 0
+ADVECTION_DIFFUSION       : 0
+DESCRIPTION               : temperature
+INITIALIZATION_METHOD     : hdf
+FILE_IN_TIME              : hdf
+FILENAME                  : ./t.hdf5 
+<endproperty>
+
+<beginproperty>
 NAME                      : cohesive sediment
 UNITS                     : mg/l
 DESCRIPTION               : cohesive sediment
@@ -15,22 +27,16 @@ INITIALIZATION_METHOD     : CONSTANT
 
 
 <beginproperty>
-NAME                      : temperature
-UNITS                     : ?C
-DESCRIPTION               : temperature
-DEFAULTVALUE              : 10
-ADVECTION_DIFFUSION       : 0
-INITIALIZATION_METHOD     : CONSTANT
-<endproperty>
-
-
-<beginproperty>
 NAME                      : salinity
 UNITS                     : psu
-DESCRIPTION               : salinity
-DEFAULTVALUE              : 34
-INITIALIZATION_METHOD     : CONSTANT
+DIMENSION                 : 3D
+DEFAULTVALUE              : 0
 ADVECTION_DIFFUSION       : 0
+DESCRIPTION               : salinity
+INITIALIZATION_METHOD     : hdf
+FILE_IN_TIME              : hdf
+FILENAME                  : ./t.hdf5
+
 <endproperty>
 
 
