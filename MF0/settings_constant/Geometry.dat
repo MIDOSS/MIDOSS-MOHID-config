@@ -1,0 +1,28 @@
+!MOHID Studio Sample Data File
+!This file contains the most common options.
+!MODULE: Geometry
+!Please complete and comment/uncomment for your specific needs
+!
+!
+!
+MINIMUMDEPTH              : 0.1
+FACESOPTION               : 2
+INITIALIZATION_METHOD     : CARTESIAN
+
+
+!Cartesian Domain
+<begindomain>
+ID                        : 1
+INITIALIZATION_METHOD     : CARTESIAN
+TYPE                      : CARTESIAN
+LAYERS                    : 40
+LAYERTHICKNESS            : 27 27 27 27 27 27 27 27 27 26 26 24 23 22 18 14 10 6 4 3 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+DOMAINDEPTH               : 440
+ImposedVVL                : 1
+FILENAME                  : ./e3t.hdf5
+
+<enddomain>
+!
+!For more information about MOHID please visit MOHID's forum: http://www.mohid.com/forum/
+!Copyright (C) 2012. Action Modulers. http://www.actionmodulers.com
+!
