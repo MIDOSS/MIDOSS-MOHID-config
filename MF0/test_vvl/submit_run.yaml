@@ -10,7 +10,7 @@ forcing:
   currents.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/test_vvl/currents_west_above2_north_below2.hdf5
   e3t.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/test_vvl/e3t.hdf5
 
-bathymetry: /home/rmueller/Data/SalishSeaCast/grid/AfterNEMOBathy201702_rdm_v01.dat  
+bathymetry: /home/rmueller/Data/SalishSeaCast/grid/AfterNEMOBathy201702_rdm_v02.dat  
 
 run data files:
   IN_MODEL: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/test_vvl/Model.dat
