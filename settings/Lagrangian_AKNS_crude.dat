@@ -7,6 +7,9 @@
 ! PARAMETER_NAME:  chosen_value      ! [MOHID default value] Explanation of parameter: Parameter options, separated by commas, e.g.
 ! ASSOCIATE_BEACH_PROB      : 1      ! [0] Associates Beaching Probabilities: 0 or 1
 !
+! Reference Material
+!    - Environment Canada (put link here)
+!    - OSCAR (from OSCAR database)
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 !~~~ Time settings ~~~
