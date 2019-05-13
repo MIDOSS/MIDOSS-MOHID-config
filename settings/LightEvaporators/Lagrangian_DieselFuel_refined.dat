@@ -61,7 +61,7 @@ METHOD_BW_DROPLETS_DIAMETER :  4
 DENSITY_METHOD              : 1        ! [2] Way to calculate particle density: 1 - LeendertseState, 2 - UNESCOState
 
 WINDDRIFTCORRECTION       : 1
-WINDDRIFTANGLE            : 3.          ! [0] Wind Drift Angle Correction due to Coriolis
+WINDDRIFTANGLE            : 0          ! [0] Wind Drift Angle Correction due to Coriolis
 WINDCOEF                  : 0.027       ! [0.03] Wind transfer Coeficient.  See, e.g., Kim et al. (2014)
 
 ! settings for Stokes Drift
