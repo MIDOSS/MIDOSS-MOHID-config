@@ -1,0 +1,175 @@
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+! Oil type: Jet Fuel (Oscar Database Name: A-1)
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+! This input file defines parameters used in oil weathering and transport
+!
+! Comments are added after parameter in this format:
+! PARAMETER_NAME:  chosen_value      ! [MOHID default value] Explanation of parameter: Parameter options, separated by commas, e.g.
+! ASSOCIATE_BEACH_PROB      : 1      ! [0] Associates Beaching Probabilities: 0 or 1
+!
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+!~~~ Time settings ~~~
+OUTPUT_TIME               : 0 1200  ! Output time interval in seconds
+DT_PARTIC                 : 3600  
+
+!~~~ Beaching flags and parameters ~~~
+ASSOCIATE_BEACH_PROB      : 1      ! [0] Associates Beaching Probabilities: 0 or 1
+OUTPUT_CONC               : 1      ! []  Flag to output concentrations: 0 or 1 (Shihan: yes?)
+DEFAULT_BEACHING_PROB     : 0.5    ! [0.5] Outbox Beaching Probability
+BEACHING_LIMIT            : 5      ! [5.0] Maximum distance between particles and coast for particle beaching 
+                                   ! MOHID Keywords do not indicate units.  We presume meteres.
+
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<BeginOrigin>
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+POSITION_COORDINATES       : -123.67 49.21  ! Spill Longitude (ºE) Latitude (ºN)
+ORIGIN_NAME               : OilSpill
+GROUP_ID                  : 1             ! [1] (integer) Group to which belong Origin
+NBR_PARTIC                : 2000          ! [-] Number of particles.  Values greater than 500 seem to work best.
+EMISSION_SPATIAL          : Accident      ! [-] Spatial emission type: (Shihan: What are the options here?)
+EMISSION_TEMPORAL         : Instantaneous ! [ ] Temporal emission type: Instantaneous or Continuous.  
+                                          !     Instantaneous: All oil spills at once.
+                                          !     Continuous: 
+POINT_VOLUME              : 1000          ! Volume of oil spilled in m^3
+ACCIDENT_METHOD           : Fay           ! [Fay] Way to calculate initial area of accident: Fay or Thickness 
+DEPTH_FROM_FREE_SURFACE   : 0
+
+!~~~ Oil advection/movement specifications (?) ~~~
+FLOAT                     : 0             ! [0 or 1], 1 keeps all the particles on the surface
+MOVEMENT                  : SullivanAllen ! [] SullivanAllen or NotRandom
+! The following 5 keywords are read if MOVEMENT : SullivanAllen  
+VARVELHX                  : 0.02          ! [0.2]
+VARVELH                   : 0.0           ! [0.0]
+TURB_V                    : Constant      ! [] Vertical turbulence parameterization: Constant or Profile
+! The following 2 keywords are read if TURB_V : Constant
+VARVELVX                  : 0.001         ! [0.0]  Set to zero to turn off vertical random walk
+VARVELV                   : 0.0           ! [0.0]
+
+ADVECTION                 : 1             ! [1] Move Particle due horizontal velocity: 0 or 1. 
+ADVECTION_Z               : 1             ! [1] Move Particle due vertical velocity: 0 or 1.
+THEORIC_AREA              : 1
+BEACHING                  : 1
+
+METHOD_FLOAT_VEL          : 1          ! [1] Method to compute rising velocity of submerged droplets: 1 - SoaresDosSantos, 2 - PADM,  3 - Zheng
+AREA_METHOD                 : 3
+METHOD_BW_DROPLETS_DIAMETER :  4
+DENSITY_METHOD              : 1        ! [2] Way to calculate particle density: 1 - LeendertseState, 2 - UNESCOState
+
+WINDDRIFTCORRECTION       : 1
+WINDDRIFTANGLE            : 0          ! [0] Wind Drift Angle Correction due to Coriolis
+WINDCOEF                  : 0.027       ! [0.03] Wind transfer Coeficient.  See, e.g., Kim et al. (2014)
+
+! settings for Stokes Drift
+!   STOKES_DRIFT            : 0/1                       [0]                     !Wave-driven particle velocity (Stokes Drift)
+!   STOKES_DRIFT_METHOD     : LonguetHigginsDeep/LonguetHigginsGeneric  [LonguetHigginsGeneric]  Stokes Drift Method
+!   WINDDRIFTCORRECTION     : 0/1/2                     [0]                     ! 0 = no wind drift correction;
+! 
+
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<<BeginOil>>
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+! Settings for the weathering options for oil
+! [0] de-activate setting, [1] activate setting
+
+OILTYPE                   : Refined        ! [] Options: Crude or Refined 
+API                       : 45.5
+POURPOINT                 : -52            ! Pour point [-] (ºC) 
+TEMPVISCREF               : 15.0           ! Temperature of reference viscosity [-] (ºC)
+VISCREF                   : 1.4            ! Reference Dynamic Viscosity [-] (cP)
+DT_OIL_INTPROCESSES       : 60             ! Time step for weathering processes, in seconds
+OIL_TIMESERIE             : OilOutput
+
+!~~~ Weathering flags ~~~
+OIL_SPREADING             : 1
+OIL_EVAPORATION           : 1
+OIL_BIODEGRADATION        : 1
+OIL_DISSOLUTION           : 1
+OIL_EMULSIFICATION        : 1
+OIL_DISPERSION            : 1
+OIL_SEDIMENTATION         : 0
+
+
+!~~~ Weathering parameters corresponding to flags ~~~
+!!! *** OIL_SPREADING [1]  *** 
+SPREADINGMETHOD           : ThicknessGradient
+USERCOEFVELMANCHA         : 10               
+
+!!! *** OIL_EVAPORATION [1] *** 
+EVAPORATIONMETHOD         : EvaporativeExposure  ! [EvaporativeExposure] Options: EvaporativeExposure/PseudoComponents/Fingas       
+
+   ! Shihan: Did I get this right, that these are for the PseudoComponents method?
+   ! If EVAPORATIONMETHOD: PseudoComponents, the following 4 parameters are required:
+   !ASPHALTENECONTENT         : 
+   !WAXCONTENT                : 
+   !RESINCONTENT              : 
+   !SATURATECONTENT           : 
+
+   ! If EVAPORATIONMETHOD: Fingas, the following 3 parameters are required
+   !FINGAS_EVAP_EQTYPE        : Logarithmic
+   !FINGAS_EVAP_EMP_DATA      : 0
+   !PERC_MASSDIST180          : 22
+
+!!! *** OIL_BIODEGREDATION [1] *** 
+! Biodegredataion groups were derived from OSCAR database by Shihan Li
+! The following coeffients reflect OSCAR oil type named:  A-1
+ANALYTEPERCENTAGE         : 1.0000E-01 2.0300E01 1.0100 7.8570E01 2.0000E-02
+MOLEWEIGHT                : 3.7000E01 8.8119E01 1.0438E02 2.1258E02 1.3000E02
+VAPORPRESSURE             : 2.9640E01 2.6817E-01 4.4773E-02 5.3219E-05 6.9330E-04
+SOLUBILITY                : 4.0000E01 4.0322E01 6.2063E02 2.8271 5.1000E04
+BIOCOE                    : 1.0000E-01 9.9690E-02 1.0000E-01 1.5692E-02 5.0000E-03
+
+!!! *** OIL_EMULSIFICATION [1] *** 
+EMULSIFICATIONMETHOD      : Mackay        ! Shihan: Do you have the reference for this?  Can you send it to me?  Either Mackay reference or Fingas 1995...I think? 
+EMULSPARAMETER            : 1.6E-6        ! Water Uptake Parameter for Mackay's emulsification method [1.6E-6]
+CEMULS                    : 1.5E-6        ! Percent of evaporated oil before emulsification begins [1.0E-6 -- 2.0E-6] (%)
+MAXVWATERCONTENT          : 0.0            ! Maximum Volume Water Content [null_real] (%)
+
+   ! the following 4 are required if OIL_EMULSIFICATION: Fingas or Rasmussen
+   !ASPHALTENECONTENT         : 
+   !WAXCONTENT                : 
+   !RESINCONTENT              : 
+   !SATURATECONTENT           : 
+
+!!! *** OIL_DISPERSION [1] *** 
+DISPERSIONMETHOD          : NewDispersion ! Options: NewDispersion, Delvigne, Mackay 
+                                          ! NewDispersion (recommended):  Code in development.  Added by Shihan Li and based on
+                                          !                  the modified weber number approach published by 
+                                          !                  Johansen et al. (2015).
+                                          ! Delvigne's method: Based on Delvinge and Sweeney (1988).  
+                                          !                  This method uses an empirical equation that has no theoretical 
+                                          !                  basis.  It also has a viscosity-dependence that introduces 
+                                          !                  uncertainty in the application
+                                          !                  of this method, especially for viscosities outside 5-200 cP.
+                                          !                  See Johansen et al. (2015) for further description of the limitation
+                                          !                  of this approach
+					  ! Mackay's method: pure empirical equation, 
+                                          !                  calculate oil dispersion based on wind speed.
+
+OWINTERFACIALTENSION      : 33.3           ! Oil-Water Interfacial Tension (Dyne/cm)
+
+
+<<EndOil>> 
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<<BeginProperty>>
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NAME                      : oil
+UNITS                     : m3
+AMBIENT_CONC              : 0
+CONCENTRATION             : 1
+
+<<EndProperty>> 
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+<EndOrigin> 
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+!For more information about MOHID please visit MOHID's forum: http://www.mohid.com/forum/
+!Copyright (C) 2012. Action Modulers. http://www.actionmodulers.com
+!
