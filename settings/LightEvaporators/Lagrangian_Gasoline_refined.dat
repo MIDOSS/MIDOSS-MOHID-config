@@ -34,7 +34,7 @@ EMISSION_SPATIAL          : Accident      ! [-] Spatial emission type: (Shihan: 
 EMISSION_TEMPORAL         : Instantaneous ! [ ] Temporal emission type: Instantaneous or Continuous.  
                                           !     Instantaneous: All oil spills at once.
                                           !     Continuous: 
-POINT_VOLUME              : 2000          ! Volume of oil spilled in m^3
+POINT_VOLUME              : 1000          ! Volume of oil spilled in m^3
 ACCIDENT_METHOD           : Fay           ! [Fay] Way to calculate initial area of accident: Fay or Thickness 
 DEPTH_FROM_FREE_SURFACE   : 0
 
@@ -115,7 +115,7 @@ EVAPORATIONMETHOD         : EvaporativeExposure  ! [EvaporativeExposure] Options
 
 !!! *** OIL_BIODEGREDATION [1] *** 
 ! Biodegredataion groups were derived from OSCAR database by Shihan Li
-! The following coeffients reflect OSCAR oil type named:  Marine Diesel 
+! The following coeffients reflect OSCAR oil type named: Gasoil - 11 No8
 ANALYTEPERCENTAGE         : 5.6000E-01 2.1000E-01 6.6750E01 3.2490E01 1.0000E-02 
 MOLEWEIGHT                : 9.4571E01 1.1855E02 3.0209E02 1.7415E02 1.3000E02
 VAPORPRESSURE             : 3.3203 1.7900E-02 1.3135E-04 3.5321E-06 6.93E-04
