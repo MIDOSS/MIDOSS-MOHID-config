@@ -1,5 +1,7 @@
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-! Oil type: Alaska North Slope Crude (Middle Pipeline)
+! Oil type: South Louisiana Sweet Crude
+!    - OSCAR (Shinan: Can you please update?)
+!    - Environment Canada (Shihan: Can you please update?)
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ! This input file defines parameters used in oil weathering and transport
 !
@@ -77,10 +79,10 @@ WINDCOEF                  : 0.027       ! [0.03] Wind transfer Coeficient.  See,
 ! [0] de-activate setting, [1] activate setting
 
 OILTYPE                   : Crude         ! [] Options: Crude or Refined 
-API                       : 27.6
-POURPOINT                 : -31.7         ! Pour point [-] (ºC) 
+API                       : 32,72
+POURPOINT                 : -41         ! Pour point [-] (ºC) 
 TEMPVISCREF               : 15.           ! Temperature of reference viscosity [-] (ºC)
-VISCREF                   : 16.           ! Reference Dynamic Viscosity [-] (cP)
+VISCREF                   : 10.1           ! Reference Dynamic Viscosity [-] (cP)
 DT_OIL_INTPROCESSES       : 60            ! Time step for weathering processes, in seconds
 OIL_TIMESERIE             : OilOutput
 
@@ -116,18 +118,18 @@ EVAPORATIONMETHOD         : EvaporativeExposure  ! [EvaporativeExposure] Options
 
 !!! *** OIL_BIODEGREDATION [1] *** 
 ! Biodegredataion groups were derived from OSCAR database by Shihan Li
-! The following coeffients reflect OSCAR oil type named:  (Shihan, can you please fill out the exact name used in OSCAR model?  I expect that there may be specific names used for, e.g., Bunker fuel, and I think it would be good to keep record of the OSCAR fuel name here.  Does that make sense based on your experience? )
-ANALYTEPERCENTAGE         : 13.6 2.61 82.67 1.13 0.01                                 
-MOLEWEIGHT                : 9.29E01 1.057011494E02 3.687520866E02 1.761327434E02 1.3E02  
-VAPORPRESSURE             : 4.79E00 2.48E-02 1.01E-04 2.87E-05 6.93E-04
-SOLUBILITY                : 2.307208456E01 3.465517241E02 5.3424E-06 8.259566372 5.1000E04
-BIOCOE                    : 1.0E-01 1.0E-01 1.0487601E-02 2.9389381E-02 5.0E-03              ! biodegradation rate of oil droplet. 
+! The following coeffients reflect OSCAR oil type named: South Louisiana Sweet 
+ANALYTEPERCENTAGE         : 1.9010E01 9.7500 6.4260E01 6.9200 1.0000E-02
+MOLEWEIGHT                : 1.1246E02 1.1295E02 3.3820E02 1.4198E02 1.3000E02
+VAPORPRESSURE             : 6.5138E-01 1.2631E-02 1.5654E-04 1.0639E-04 6.9330E-04
+SOLUBILITY                : 7.5907 1.7909E02 8.2324E-06 2.3057E01 5.1000E04
+BIOCOE                    : 1.0000E-01 1.0000E-01 1.3245E-02 5.0769E-02 5.0000E-03
 
 !!! *** OIL_EMULSIFICATION [1] *** 
 EMULSIFICATIONMETHOD      : Mackay        ! Shihan: Do you have the reference for this?  Can you send it to me?  Either Mackay reference or Fingas 1995...I think? 
 EMULSPARAMETER            : 1.6E-6        ! Water Uptake Parameter for Mackay's emulsification method [1.6E-6]
 CEMULS                    : 1.5E-6        ! Percent of evaporated oil before emulsification begins [1.0E-6 -- 2.0E-6] (%)
-MAXVWATERCONTENT          : 62            ! Maximum Volume Water Content [null_real] (%)
+MAXVWATERCONTENT          : 67            ! Maximum Volume Water Content [null_real] (%)
 
    ! the following 4 are required if OIL_EMULSIFICATION: Fingas or Rasmussen
    !ASPHALTENECONTENT         : 1.27
@@ -150,7 +152,7 @@ DISPERSIONMETHOD          : NewDispersion ! Options: NewDispersion, Delvigne, Ma
 					  ! Mackay's method: pure empirical equation, 
                                           !                  calculate oil dispersion based on wind speed.
 
-OWINTERFACIALTENSION      : 19.9            ! Oil-Water Interfacial Tension (Dyne/cm)
+OWINTERFACIALTENSION      : 16.8            ! Oil-Water Interfacial Tension (Dyne/cm)
 
 
 <<EndOil>> 
