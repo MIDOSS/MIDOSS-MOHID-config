@@ -1,5 +1,8 @@
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-! Oil type:  Diesel (Marine Diesel)
+! Oil type:  Diesel (Diesel Fuel (Canada))
+! Reference Material
+!    - Environment Canada (http://www.etc-cte.ec.gc.ca/databases/oilproperties/default.aspx)
+!    - OSCAR (Biodegradation parameters are from OSCAR database, Marine Diesel (IKU))
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ! This input file defines parameters used in oil weathering and transport
 !
@@ -74,7 +77,7 @@ WINDCOEF                  : 0.027       ! [0.03] Wind transfer Coeficient.  See,
 ! [0] de-activate setting, [1] activate setting
 
 OILTYPE                   : Refined         ! [] Options: Crude or Refined 
-API                       : 27.6
+API                       : 39.4
 POURPOINT                 : -30         ! Pour point [-] (ºC) 
 TEMPVISCREF               : 15.0           ! Temperature of reference viscosity [-] (ºC)
 VISCREF                   : 2.0           ! Reference Dynamic Viscosity [-] (cP)

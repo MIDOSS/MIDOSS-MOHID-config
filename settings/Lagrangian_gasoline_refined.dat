@@ -1,5 +1,7 @@
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ! Oil type: Gasoline
+!    - OSCAR (Parameters are from OSCAR database, Gasoil - 11 No8)
+!    - Environment Canada (Oil-water interfacial tension is from http://www.etc-cte.ec.gc.ca/databases/oilproperties/default.aspx, Gasoline (Leaded))
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ! This input file defines parameters used in oil weathering and transport
 !
