@@ -2,6 +2,9 @@
 ! Oil type: Jet Fuel (Oscar Database Name: A-1)
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ! This input file defines parameters used in oil weathering and transport
+!    - OSCAR (Parameters are from OSCAR database, A-1)
+!    - Environment Canada (Oil-water interfacial tension is from [Shihan update?] )
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 !
 ! Comments are added after parameter in this format:
 ! PARAMETER_NAME:  chosen_value      ! [MOHID default value] Explanation of parameter: Parameter options, separated by commas, e.g.
