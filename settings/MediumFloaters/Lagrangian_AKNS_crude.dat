@@ -31,7 +31,7 @@ POSITION_COORDINATES       : -123.67 49.21  ! Spill Longitude (ºE) Latitude (º
 ORIGIN_NAME               : OilSpill
 GROUP_ID                  : 1             ! [1] (integer) Group to which belong Origin
 NBR_PARTIC                : 2000          ! [-] Number of particles.  Values greater than 500 seem to work best.
-EMISSION_SPATIAL          : Accident      ! [-] Spatial emission type: (Shihan: What are the options here?)  !   EMISSION_SPATIAL        : Point/Accident/Box        [-]                     !Spatial emission type
+EMISSION_SPATIAL          : Accident      ! [-] Spatial emission type: Point/Accident/Box
 EMISSION_TEMPORAL         : Instantaneous ! [ ] Temporal emission type: Instantaneous or Continuous.  
                                           !     Instantaneous: All oil spills at once.
                                           !     Continuous: 
