@@ -1,10 +1,10 @@
 run_id: SOG_01dec17_MediumFloater_1000m3_7days
-account: def-allen
-walltime: 1:30:00
+account: rrg-allen
+walltime: 0:10:00
 
 paths:
   mohid repo: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-CODE/
-  runs directory: $SCRATCH/MIDOSS/runs/MediumFloater/
+  runs directory: $SCRATCH/MIDOSS/runs/MediumFloater/AKNS
 
 forcing:
   winds.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/winds.hdf5
