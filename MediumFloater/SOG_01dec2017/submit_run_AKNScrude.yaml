@@ -1,6 +1,6 @@
 run_id: SOG_01dec17_MediumFloater_1000m3_7days
 account: rrg-allen
-walltime: 0:10:00
+walltime: 01:30:00
 
 paths:
   mohid repo: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-CODE/
