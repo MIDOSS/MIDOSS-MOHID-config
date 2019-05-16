@@ -1,4 +1,6 @@
-# A no warning crash that has this characteristic:
+# ERRORS from formatting of Lagrangian.dat file
+
+## A no warning crash that has this characteristic:
 
 In STDOUT:
 ```
@@ -127,7 +129,7 @@ DEPTH_FROM_FREE_SURFACE   : 0
 ```
 i.e. ACCIDENT_METHOD :1; unfortunately, Shihan says the value we ought to use is "Fay"
 ```
-# In STDOUT: "FATAL; KEYWORD; Subroutine OilOptions - ModuleOil_0D. ERR70."
+## In STDOUT: "FATAL; KEYWORD; Subroutine OilOptions - ModuleOil_0D. ERR70."
 
 This was caused by a comment in Lagrangian.dat file.  The line is was as follows.
 ```
