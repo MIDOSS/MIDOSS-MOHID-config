@@ -1,3 +1,26 @@
+# ERRORS from running the model
+
+##  Could not read solution from HDF5 file
+I got this error in stdout when I ran the model using def-allen instead of rrg-allen.  The output looked like this:
+```
+Please Wait...
+ -------------------------- MODEL -------------------------
+
+ Constructing      :
+ ID                :            1
+
+ OPENMP: Max number of threads available is            1
+ OPENMP: Number of threads requested is           12
+ <Compilation Options Warning>
+ OPENMP: Number of threads implemented is            1
+
+ Could not read solution from HDF5 file
+ Last instant in file lower than simulation ending time
+ Matrix name: mean wave period
+
+```
+
+
 # ERRORS from formatting of Lagrangian.dat file
 
 ## A no warning crash that has this characteristic:
