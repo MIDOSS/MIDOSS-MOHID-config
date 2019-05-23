@@ -1,10 +1,10 @@
-run_id: SOG_01dec17_MediumFloater_1000m3_6days_VVLfix
+run_id: SOG_01dec17_MediumFloater_1000m3_6days_VVLfix_test
 account: rrg-allen
-walltime: 01:30:00
+walltime: 00:05:00
 
 paths:
   mohid repo: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-CODE/
-  runs directory: $SCRATCH/MIDOSS/runs/MediumFloater/AKNS
+  runs directory: $SCRATCH/MIDOSS/runs/MediumFloater/AKNS/test
 
 forcing:
   winds.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/winds.hdf5
