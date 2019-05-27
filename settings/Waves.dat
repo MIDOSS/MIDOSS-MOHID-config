@@ -7,6 +7,7 @@
 !
 WAVE_PERIOD               : 1
 WAVE_HEIGHT               : 1
+WAVE_WCC                  : 1
 WAVE_DIRECTION            : 0
 
 <begin_waveperiod>
@@ -20,6 +21,13 @@ INITIALIZATION_METHOD     : CONSTANT
 REMAIN_CONSTANT           : 1
 DEFAULTVALUE              : 0.8
 <end_waveheight>
+
+<begin_wavewcc>
+INITIALIZATION_METHOD     : CONSTANT
+REMAIN_CONSTANT           : 1
+DEFAULTVALUE              : 0.5
+<end_wavewcc>
+
 !
 !For more information about MOHID please visit MOHID's forum: http://www.mohid.com/forum/
 !Copyright (C) 2012. Action Modulers. http://www.actionmodulers.com

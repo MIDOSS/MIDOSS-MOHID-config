@@ -73,7 +73,7 @@ ACCIDENT_METHOD           : 1
 ! DENSITY_METHOD [2] Way to calculate particle density: 1 - LeendertseState, 2 - UNESCOState
 ! WINDDRIFTCORRECTION      
 ! WINDDRIFTANGLE [0] Wind Drift Angle Correction due to Coriolis
-! WINDCOEF       [0.03] Wind transfer Coeficient.  See, e.g., Kim et al. (2014)
+! WINDCOEF       [0.03] Wind transfer Coefficient.  See, e.g., Kim et al. (2014)
 
 ! settings for Stokes Drift
 !   STOKES_DRIFT : 0/1  [0] ! Wave-driven particle velocity (Stokes Drift)
