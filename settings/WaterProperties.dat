@@ -13,7 +13,7 @@ ADVECTION_DIFFUSION       : 0
 DESCRIPTION               : temperature
 INITIALIZATION_METHOD     : hdf
 FILE_IN_TIME              : hdf
-FILENAME                  : /home/rmueller/project/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/01dec2017_06dec2017/t.hdf5
+FILENAME                  : $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/01dec2017_06dec2017/t.hdf5
 <endproperty>
 
 <beginproperty>
@@ -35,7 +35,7 @@ ADVECTION_DIFFUSION       : 0
 DESCRIPTION               : salinity
 INITIALIZATION_METHOD     : hdf
 FILE_IN_TIME              : hdf
-FILENAME                  : /home/rmueller/project/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/01dec2017_06dec2017/t.hdf5
+FILENAME                  : $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/01dec2017_06dec2017/t.hdf5
 
 <endproperty>
 
