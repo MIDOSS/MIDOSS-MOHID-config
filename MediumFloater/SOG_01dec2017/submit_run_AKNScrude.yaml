@@ -4,7 +4,7 @@ walltime: 00:05:00
 
 paths:
   mohid repo: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-CODE/
-  runs directory: $SCRATCH/MIDOSS/runs/MediumFloater/AKNS/
+  runs directory: $SCRATCH/MIDOSS/runs/tmp
 
 forcing:
   winds.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/winds.hdf5
@@ -15,12 +15,12 @@ forcing:
   ww3.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/ww3.hdf5
   e3t.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/e3t.hdf5
 
-bathymetry: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/AfterNEMOBathy201702.dat
+bathymetry: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Bathymetry.dat
 
 run data files:
   IN_MODEL: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Model_lowdt.dat
   PARTIC_DATA: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/MediumFloaters/Lagrangian_AKNS_crude.dat
-  DOMAIN: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/Geometry.dat
+  DOMAIN: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Geometry.dat
   SURF_DAT: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Atmosphere.dat
   IN_DAD3D: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/settings/Hydrodynamic.dat
   BOT_DAT: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/InterfaceSedimentWater.dat
@@ -28,7 +28,7 @@ run data files:
   IN_TIDES: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Tide.dat
   IN_TURB: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Turbulence.dat
   DISPQUAL: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/WaterProperties.dat
-  WAVES_DAT: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Waves_ashu.dat
+  WAVES_DAT: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Waves.dat
 
 vcs revisions:
   hg:
