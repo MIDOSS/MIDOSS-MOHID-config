@@ -7,22 +7,22 @@ paths:
   runs directory: $SCRATCH/MIDOSS/runs/tmp
 
 forcing:
-  winds.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/winds.hdf5
-  currents.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/currents_unrotated.hdf5
-  water_levels.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/t.hdf5
-  temperature.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/t.hdf5
-  salinity.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/t.hdf5
-  ww3.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/ww3.hdf5
-  e3t.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/SOG12117/e3t.hdf5
+  winds.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/01dec2017_06dec2017/winds.hdf5
+  currents.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/01dec2017_06dec2017/currents_unrotated.hdf5
+  water_levels.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/01dec2017_06dec2017/t.hdf5
+  temperature.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/01dec2017_06dec2017/t.hdf5
+  salinity.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/01dec2017_06dec2017/t.hdf5
+  ww3.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/01dec2017_06dec2017/ww3.hdf5
+  e3t.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/01dec2017_06dec2017/e3t.hdf5
 
-bathymetry: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Bathymetry.dat
+bathymetry: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/AfterNEMOBathy201702.dat
 
 run data files:
   IN_MODEL: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Model_lowdt.dat
   PARTIC_DATA: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/MediumFloaters/Lagrangian_AKNS_crude.dat
   DOMAIN: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/Geometry.dat
   SURF_DAT: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Atmosphere.dat
-  IN_DAD3D: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/settings/Hydrodynamic.dat
+  IN_DAD3D: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Hydrodynamic.dat
   BOT_DAT: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/InterfaceSedimentWater.dat
   AIRW_DAT: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/InterfaceWaterAir.dat
   IN_TIDES: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Tide.dat
