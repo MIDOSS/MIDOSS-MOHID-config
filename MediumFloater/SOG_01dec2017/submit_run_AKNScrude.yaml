@@ -20,7 +20,7 @@ bathymetry: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Bathymetry.dat
 run data files:
   IN_MODEL: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Model_lowdt.dat
   PARTIC_DATA: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/MediumFloaters/Lagrangian_AKNS_crude.dat
-  DOMAIN: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Geometry.dat
+  DOMAIN: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/Geometry.dat
   SURF_DAT: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Atmosphere.dat
   IN_DAD3D: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/settings/Hydrodynamic.dat
   BOT_DAT: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/InterfaceSedimentWater.dat
