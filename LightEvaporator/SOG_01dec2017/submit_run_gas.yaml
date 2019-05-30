@@ -1,10 +1,10 @@
-run_id: SOG_01dec17_MediumFloater_1000m3_6days_VVLfix
+run_id: SOG_01dec17_LightEvaporatorGas_1000m3_6days
 account: rrg-allen
 walltime: 01:30:00
 
 paths:
   mohid repo: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-CODE/
-  runs directory: $SCRATCH/MIDOSS/runs/MediumFloater/AKNS
+  runs directory: $SCRATCH/MIDOSS/runs/LightEvaporators/gas
 
 forcing:
   winds.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/01dec2017_06dec2017/winds.hdf5
@@ -15,11 +15,13 @@ forcing:
   ww3.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/01dec2017_06dec2017/ww3.hdf5
   e3t.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/01dec2017_06dec2017/e3t.hdf5
 
+bathymetry: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/settings/Bathymetry.dat
+
 bathymetry: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/AfterNEMOBathy201702.dat
 
 run data files:
   IN_MODEL: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Model_lowdt.dat
-  PARTIC_DATA: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/MediumFloaters/Lagrangian_AKNS_crude.dat
+  PARTIC_DATA: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/LightEvaporators/Lagrangian_Gasoline_refined.dat
   DOMAIN: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/Geometry.dat
   SURF_DAT: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Atmosphere.dat
   IN_DAD3D: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Hydrodynamic.dat
