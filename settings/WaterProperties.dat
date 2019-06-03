@@ -13,7 +13,7 @@ ADVECTION_DIFFUSION       : 0
 DESCRIPTION               : temperature
 INITIALIZATION_METHOD     : hdf
 FILE_IN_TIME              : hdf
-FILENAME                  : ./t.hdf5
+FILENAME                  : ./temperature.hdf5
 <endproperty>
 
 <beginproperty>
@@ -35,7 +35,7 @@ ADVECTION_DIFFUSION       : 0
 DESCRIPTION               : salinity
 INITIALIZATION_METHOD     : hdf
 FILE_IN_TIME              : hdf
-FILENAME                  : ./t.hdf5
+FILENAME                  : ./salinity.hdf5
 
 <endproperty>
 
