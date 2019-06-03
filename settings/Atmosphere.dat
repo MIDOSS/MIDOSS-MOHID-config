@@ -26,7 +26,7 @@ DESCRIPTION               : wind velocity X
 DEFAULTVALUE              : 0.
 
 FILE_IN_TIME              : HDF
-FILENAME                  : /home/rmueller/project/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/SOG_05jun15_15jun15/winds.hdf5
+FILENAME                  :  ./winds.hdf5
 OUTPUT_HDF                : 0
 <endproperty>
 
@@ -37,7 +37,7 @@ DESCRIPTION               : wind velocity Y
 DEFAULTVALUE              : 0.
 
 FILE_IN_TIME              : HDF
-FILENAME                  : /home/rmueller/project/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/SOG_05jun15_15jun15/winds.hdf5
+FILENAME                  : ./winds.hdf5 
 OUTPUT_HDF                : 0
 <endproperty>
 !!!!!!!!!!!!!!!!!!!!!
