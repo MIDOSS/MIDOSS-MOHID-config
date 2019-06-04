@@ -1,19 +1,19 @@
-run_id: TP_15jun17_22jun17_MediumFloater_AKNS_1000m3
+run_id: SOG_05jun15_15jun15_MediumFloater_AKNS_1000m3
 account: rrg-allen
-walltime: 00:05:00
+walltime: 01:30:00
 
 paths:
   mohid repo: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-CODE/
   runs directory: $SCRATCH/MIDOSS/runs/MediumFloater/AKNS
 
 forcing:
-  winds.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/TP_15jun2017_22jun2017/winds.hdf5
-  currents.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/TP_15jun2017_22jun2017/currents.hdf5
-  water_levels.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/TP_15jun2017_22jun2017/t.hdf5
-  temperature.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/TP_15jun2017_22jun2017/t.hdf5
-  salinity.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/TP_15jun2017_22jun2017/t.hdf5
-  ww3.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/TP_15jun2017_22jun2017/waves.hdf5
-  e3t.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/TP_15jun2017_22jun2017/e3t.hdf5
+  winds.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/SOG_05jun15_15jun15/winds.hdf5
+  currents.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/SOG_05jun15_15jun15/currents.hdf5
+  water_levels.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/SOG_05jun15_15jun15/t.hdf5
+  temperature.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/SOG_05jun15_15jun15/t.hdf5
+  salinity.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/SOG_05jun15_15jun15/t.hdf5
+  ww3.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/SOG_05jun15_15jun15/waves.hdf5
+  e3t.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/SOG_05jun15_15jun15/e3t.hdf5
 
 bathymetry: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/AfterNEMOBathy201702.dat
 
