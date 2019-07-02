@@ -153,6 +153,11 @@ EVAPORATIONMETHOD         : EvaporativeExposure
 !!! ** OIL_BIODEGREDATION [1] **
 ! Biodegredataion groups were derived from OSCAR database by Shihan Li
 ! The following coeffients reflect OSCAR oil type named: Marine Diesel (IKU) 
+! ANALYTEPERCENTAGE    [%]
+! MOLEWEIGHT           [g/mole] 
+! VAPORPRESSURE        [atm]
+! SOLUBILITY           [ppm]
+! BIOCOE               [per day] 
 
 ANALYTEPERCENTAGE         : 7.4000E-01 2.2600 7.1100E01 2.5850E01 3.0000E02
 MOLEWEIGHT                : 1.0411E02 1.1975E02 2.1345E02 1.6301E02 1.3000E02

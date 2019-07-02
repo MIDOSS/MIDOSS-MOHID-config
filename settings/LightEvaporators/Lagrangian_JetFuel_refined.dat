@@ -154,6 +154,11 @@ EVAPORATIONMETHOD         : EvaporativeExposure
 !!! ** OIL_BIODEGREDATION [1] **
 ! Biodegredataion groups were derived from OSCAR database by Shihan Li
 ! The following coeffients reflect OSCAR oil type named: Gasoil - 11 No8
+! ANALYTEPERCENTAGE    [%]
+! MOLEWEIGHT           [g/mole]
+! VAPORPRESSURE        [atm]
+! SOLUBILITY           [ppm]
+! BIOCOE               [per day]
 
 ANALYTEPERCENTAGE         : 1.0000E-01 2.0300E01 1.0100 7.8570E01 2.0000E-02
 MOLEWEIGHT                : 3.7000E01 8.8119E01 1.0438E02 2.1258E02 1.3000E02

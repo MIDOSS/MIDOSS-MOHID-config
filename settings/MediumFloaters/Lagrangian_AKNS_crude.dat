@@ -152,6 +152,11 @@ EVAPORATIONMETHOD         : EvaporativeExposure
 !!! ** OIL_BIODEGREDATION [1] **
 ! Biodegredataion groups were derived from OSCAR database by Shihan Li
 ! The following coeffients reflect OSCAR oil type named: Alaskan North Slope (IKU) F
+! ANALYTEPERCENTAGE    [%]
+! MOLEWEIGHT           [g/mole]
+! VAPORPRESSURE        [atm]
+! SOLUBILITY           [ppm]
+! BIOCOE               [per day]
 
 ANALYTEPERCENTAGE         : 13.6 2.61 82.67 1.13 0.01
 MOLEWEIGHT                : 9.29E01 1.057011494E02 3.687520866E02 1.761327434E02 1.3E02
