@@ -15,8 +15,6 @@ forcing:
   ww3.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/01dec2017_06dec2017/ww3.hdf5
   e3t.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/01dec2017_06dec2017/e3t.hdf5
 
-bathymetry: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/MF0/settings/Bathymetry.dat
-
 bathymetry: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/AfterNEMOBathy201702.dat
 
 run data files:

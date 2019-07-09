@@ -166,12 +166,12 @@ SOLUBILITY                : 1.3135E01 8.3274E01 8.1207E-06 5.7847 5.1000E04
 BIOCOE                    : 1.0000E-01 1.0000E-01 1.6382E-01 1.9955E-02 5.0000E-03
 
 !!! ** OIL_EMULSIFICATION [1] **
-! EMULSIFICATIONMETHOD [] Shihan says to see MOHID docs for refs
+! EMULSIFICATIONMETHOD [] Shihan says to see MOHID docs for refs [Tested with Mackay and Fingas]. 
 ! EMULSPARAMETER       [1.6E-6]           Water Uptake Parameter for Mackay's emulsification method 
 ! CEMULS               [1.0E-6 -- 2.0E-6] % Percent of evaporated oil before emulsification begins 
 ! MAXVWATERCONTENT     [null_real]          Maximum % Volume Water Content
 
-EMULSIFICATIONMETHOD      : Mackay        
+EMULSIFICATIONMETHOD      : Fingas
 EMULSPARAMETER            : 1.6E-6       
 CEMULS                    : 1.5E-6      
 MAXVWATERCONTENT          : 0.0         
