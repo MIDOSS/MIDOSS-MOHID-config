@@ -1,4 +1,4 @@
-!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+﻿!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ! Oil type: Gasoline
 !    - OSCAR (Parameters are from OSCAR database, Gasoil - 11 No8)
 !    - Environment Canada (Oil-water interfacial tension is from http://www.etc-cte.ec.gc.ca/databases/oilproperties/default.aspx, Gasoline (Leaded))
@@ -203,6 +203,9 @@ EVAPORATIONMETHOD         : EvaporativeExposure
 
 DISPERSIONMETHOD          : NewDispersion
 OWINTERFACIALTENSION      : 19.7
+
+!!! ** OIL_DISSOLUTION [1] **
+DISSOLUTIONMETHOD         : MultiComponents
 
 <<EndOil>>
 

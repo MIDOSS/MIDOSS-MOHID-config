@@ -1,4 +1,4 @@
-!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+﻿!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ! Oil type: Diesel (Marine Diesel IKU)
 ! Reference Material
 !    - OSCAR (Biodegradation parameters are from OSCAR database, Marine Diesel (IKU))
@@ -203,6 +203,9 @@ EVAPORATIONMETHOD         : EvaporativeExposure
 
 DISPERSIONMETHOD          : NewDispersion
 OWINTERFACIALTENSION      : 28
+
+!!! ** OIL_DISSOLUTION [1] **
+DISSOLUTIONMETHOD         : MultiComponents
 
 <<EndOil>>
 

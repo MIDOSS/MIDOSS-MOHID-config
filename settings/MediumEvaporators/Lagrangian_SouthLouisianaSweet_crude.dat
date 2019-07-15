@@ -1,4 +1,4 @@
-!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+﻿!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ! Oil type: South Louisiana Sweet Crude
 !    - OSCAR (Shinan: Can you please update?)
 !    - Environment Canada (Shihan: Can you please update?)
@@ -159,6 +159,10 @@ DISPERSIONMETHOD          : NewDispersion ! Options: NewDispersion, Delvigne, Ma
                                           !                  calculate oil dispersion based on wind speed.
 
 OWINTERFACIALTENSION      : 16.8            ! Oil-Water Interfacial Tension (Dyne/cm)
+
+
+!!! ** OIL_DISSOLUTION [1] **
+DISSOLUTIONMETHOD         : MultiComponents
 
 
 <<EndOil>> 

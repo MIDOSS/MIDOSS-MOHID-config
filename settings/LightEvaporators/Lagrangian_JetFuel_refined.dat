@@ -1,4 +1,4 @@
-!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+﻿!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ! Oil type: Jet Fuel (Oscar Database Name: A-1)
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ! This input file defines parameters used in oil weathering and transport
@@ -204,6 +204,9 @@ EVAPORATIONMETHOD         : EvaporativeExposure
 
 DISPERSIONMETHOD          : NewDispersion
 OWINTERFACIALTENSION      : 33.3
+
+!!! ** OIL_DISSOLUTION [1] **
+DISSOLUTIONMETHOD         : MultiComponents
 
 <<EndOil>>
 
