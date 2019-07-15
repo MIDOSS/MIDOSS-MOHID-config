@@ -78,9 +78,10 @@ ACCIDENT_METHOD           : 1
 
 ! settings for Stokes Drift
 !   STOKES_DRIFT : 0/1  [0] ! Wave-driven particle velocity (Stokes Drift)
-!   STOKES_DRIFT_METHOD : LonguetHigginsDeep/LonguetHigginsGeneric  [LonguetHigginsGeneric]  Stokes Drift Method
+!   STOKES_DRIFT_METHOD : LonguetHigginsDeep/LonguetHigginsGeneric/ImposedStokes  [LonguetHigginsGeneric]  Stokes Drift Method, ImposedStokes needs the input Stokes U and Stokes V in wave.dat
 !   WINDDRIFTCORRECTION     : 0/1/2 [0]     ! 0 = no wind drift correction;
-!
+
+
 
 DEPTH_FROM_FREE_SURFACE   : 0
 FLOAT                     : 0
@@ -105,6 +106,10 @@ DENSITY_METHOD            : 1
 WINDDRIFTCORRECTION       : 1
 WINDDRIFTANGLE            : 0
 WINDCOEF                  : 0.027
+
+
+STOKES_DRIFT              : 1
+STOKES_DRIFT_METHOD       : ImposedStokes
 
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 <<BeginOil>>

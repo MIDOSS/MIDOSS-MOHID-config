@@ -72,6 +72,9 @@ WINDCOEF                  : 0.027       ! [0.03] Wind transfer Coeficient.  See,
 !   WINDDRIFTCORRECTION     : 0/1/2                     [0]                     ! 0 = no wind drift correction;
 ! 
 
+STOKES_DRIFT              : 1
+STOKES_DRIFT_METHOD       : ImposedStokes
+
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 <<BeginOil>>
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
