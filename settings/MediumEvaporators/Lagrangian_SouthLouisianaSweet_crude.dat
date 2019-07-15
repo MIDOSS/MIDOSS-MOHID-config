@@ -132,16 +132,16 @@ SOLUBILITY                : 7.5907 1.7909E02 8.2324E-06 2.3057E01 5.1000E04
 BIOCOE                    : 1.0000E-01 1.0000E-01 1.3245E-02 5.0769E-02 5.0000E-03
 
 !!! *** OIL_EMULSIFICATION [1] *** 
-EMULSIFICATIONMETHOD      : Mackay        ! Shihan: Do you have the reference for this?  Can you send it to me?  Either Mackay reference or Fingas 1995...I think? 
+EMULSIFICATIONMETHOD      : Fingas        ! Shihan: Do you have the reference for this?  Can you send it to me?  Either Mackay reference or Fingas 1995...I think? 
 EMULSPARAMETER            : 1.6E-6        ! Water Uptake Parameter for Mackay's emulsification method [1.6E-6]
 CEMULS                    : 1.5E-6        ! Percent of evaporated oil before emulsification begins [1.0E-6 -- 2.0E-6] (%)
 MAXVWATERCONTENT          : 67            ! Maximum Volume Water Content [null_real] (%)
 
    ! the following 4 are required if OIL_EMULSIFICATION: Fingas or Rasmussen
-   !ASPHALTENECONTENT         : 1.27
-   !WAXCONTENT                : 2.9
-   !RESINCONTENT              : 6.1
-   !SATURATECONTENT           : 75.0
+ASPHALTENECONTENT         : 0.8
+WAXCONTENT                : 1.7
+RESINCONTENT              : 5.9
+SATURATECONTENT           : 80.8
 
 !!! *** OIL_DISPERSION [1] *** 
 DISPERSIONMETHOD          : NewDispersion ! Options: NewDispersion, Delvigne, Mackay 
