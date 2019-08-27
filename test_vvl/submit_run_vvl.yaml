@@ -13,7 +13,7 @@ forcing:
 bathymetry: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/AfterNEMOBathy201702.dat
 
 run data files:
-  IN_MODEL: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/test_vvl/Model.dat
+  IN_MODEL: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/test_vvl/Model.dat
   PARTIC_DATA: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/MediumFloaters/Lagrangian_AKNS_crude.dat
   DOMAIN: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/Geometry.dat
   SURF_DAT: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Atmosphere.dat
@@ -22,7 +22,7 @@ run data files:
   AIRW_DAT: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/InterfaceWaterAir.dat
   IN_TIDES: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Tide.dat
   IN_TURB: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Turbulence.dat
-  DISPQUAL: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/WaterProperties.dat
+  DISPQUAL: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/test_vvl/WaterProperties.dat
   WAVES_DAT: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/test_vvl/Waves.dat
 
 vcs revisions:
