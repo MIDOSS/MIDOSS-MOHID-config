@@ -1,0 +1,33 @@
+run_id: vvl_test_cedar_de0ae8ae112b
+account: def-allen
+walltime: 0:05:00
+
+paths:
+  mohid repo: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-CODE/
+  runs directory: $SCRATCH/MIDOSS/runs/vvl_test
+
+forcing:
+  currents.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/test_vvl/currents_west_above2_north_below2.hdf5
+  e3t.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/test_vvl/e3t.hdf5
+
+bathymetry: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/AfterNEMOBathy201702.dat
+
+run data files:
+  IN_MODEL: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/test_vvl/Model.dat
+  PARTIC_DATA: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/MediumFloaters/Lagrangian_AKNS_crude.dat
+  DOMAIN: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/Geometry.dat
+  SURF_DAT: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Atmosphere.dat
+  IN_DAD3D: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/test_vvl/Hydrodynamic_const_W_unrotated.dat
+  BOT_DAT: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/InterfaceSedimentWater.dat
+  AIRW_DAT: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/InterfaceWaterAir.dat
+  IN_TIDES: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Tide.dat
+  IN_TURB: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Turbulence.dat
+  DISPQUAL: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/WaterProperties.dat
+  WAVES_DAT: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/test_vvl/Waves.dat
+
+vcs revisions:
+  hg:
+    - $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config
+    - $PROJECT/$USER/MIDOSS/MOHID-Cmd
+    - $PROJECT/$USER/MIDOSS/NEMO-Cmd
+    - $PROJECT/$USER/MIDOSS/moad_tools
