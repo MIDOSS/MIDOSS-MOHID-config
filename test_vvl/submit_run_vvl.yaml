@@ -14,9 +14,9 @@ bathymetry: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/AfterNEMOBathy201702.dat
 
 run data files:
   IN_MODEL: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/test_vvl/Model.dat
-  PARTIC_DATA: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/MediumFloaters/Lagrangian_AKNS_crude.dat
+  PARTIC_DATA: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/test_vvl/Lagrangian_AKNS_crude.dat
   DOMAIN: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/Geometry.dat
-  SURF_DAT: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Atmosphere.dat
+  SURF_DAT: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/test_vvl/Atmosphere.dat
   IN_DAD3D: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/test_vvl/Hydrodynamic_const_W_unrotated.dat
   BOT_DAT: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/InterfaceSedimentWater.dat
   AIRW_DAT: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/InterfaceWaterAir.dat
