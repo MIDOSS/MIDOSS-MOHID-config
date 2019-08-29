@@ -14,6 +14,7 @@ FILE_IN_TIME              : NONE
 REMAIN_CONSTANT           : 1
 TIME_SERIE                : 0
 OUTPUT_HDF                : 0
+REMAIN_CONSTANT           : 1
 <endproperty>
 
 <beginproperty>
@@ -22,6 +23,7 @@ UNITS                     : m/s
 DESCRIPTION               : wind velocity X
 DEFAULTVALUE              : 0.
 FILE_IN_TIME              : NONE
+REMAIN_CONSTANT           : 1
 OUTPUT_HDF                : 0
 <endproperty>
 
@@ -32,6 +34,7 @@ DESCRIPTION               : wind velocity Y
 DEFAULTVALUE              : 0.
 FILE_IN_TIME              : NONE
 OUTPUT_HDF                : 0
+REMAIN_CONSTANT           : 1
 <endproperty>
 
 !Output Options
