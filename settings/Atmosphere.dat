@@ -12,7 +12,7 @@ NO_INTERPOLATION          : 1
 NAME                      : atmospheric pressure
 UNITS                     : atm
 DESCRIPTION               : atmospheric pressure
-DEFAULTVALUE              : 101325
+DEFAULTVALUE              : 1
 FILE_IN_TIME              : NONE
 REMAIN_CONSTANT           : 1
 TIME_SERIE                : 0
