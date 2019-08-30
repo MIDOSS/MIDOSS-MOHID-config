@@ -1,6 +1,6 @@
-run_id: SOG_05jun15_12jun15_MediumFloater_AKNS_1000m3_new
+run_id: SOG_05jun15_12jun15_MediumFloater_AKNS_1000m3_de0ae8a
 account: def-allen
-walltime: 02:00:00
+walltime: 0:05:00
 
 paths:
   mohid repo: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-CODE/

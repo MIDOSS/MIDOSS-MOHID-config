@@ -12,7 +12,6 @@ DESCRIPTION               : atmospheric pressure
 DEFAULTVALUE              : 101325
 FILE_IN_TIME              : NONE
 REMAIN_CONSTANT           : 1
-TIME_SERIE                : 0
 OUTPUT_HDF                : 0
 REMAIN_CONSTANT           : 1
 <endproperty>
@@ -22,6 +21,7 @@ NAME                      : wind velocity X
 UNITS                     : m/s
 DESCRIPTION               : wind velocity X
 DEFAULTVALUE              : 0.
+INITIALIZATION_METHOD     : CONSTANT
 FILE_IN_TIME              : NONE
 REMAIN_CONSTANT           : 1
 OUTPUT_HDF                : 0
@@ -32,7 +32,9 @@ NAME                      : wind velocity Y
 UNITS                     : m/s
 DESCRIPTION               : wind velocity Y
 DEFAULTVALUE              : 0.
+INITIALIZATION_METHOD     : CONSTANT
 FILE_IN_TIME              : NONE
+REMAIN_CONSTANT           : 1
 OUTPUT_HDF                : 0
 REMAIN_CONSTANT           : 1
 <endproperty>

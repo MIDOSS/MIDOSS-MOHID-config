@@ -1,5 +1,5 @@
-run_id: SOG_01dec17_MediumFloater_1000m3_6days_VVLfix
-account: rrg-allen
+run_id: SOG_01dec17_MediumFloater_1000m3_6days_de0ae8a
+account: def-allen
 walltime: 00:05:00
 
 paths:
