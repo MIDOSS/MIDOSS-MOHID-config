@@ -17,7 +17,7 @@ run data files:
   PARTIC_DATA: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/MediumFloaters/Lagrangian_AKNS_crude.dat
   DOMAIN: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/Geometry.dat
   SURF_DAT: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/test_vvl/Atmosphere.dat
-  IN_DAD3D: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/test_vvl/Hydrodynamic_const_W_unrotated.dat
+  IN_DAD3D: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/test_vvl/Hydrodynamic.dat
   BOT_DAT: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/InterfaceSedimentWater.dat
   AIRW_DAT: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/InterfaceWaterAir.dat
   IN_TIDES: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Tide.dat
