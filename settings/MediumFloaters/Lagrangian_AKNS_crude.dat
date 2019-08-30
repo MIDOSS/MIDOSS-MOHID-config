@@ -107,8 +107,8 @@ WINDDRIFTANGLE            : 0
 WINDCOEF                  : 0.027
 
 
-STOKES_DRIFT              : 1
-STOKES_DRIFT_METHOD       : ImposedStokes
+STOKES_DRIFT              : 0
+!STOKES_DRIFT_METHOD       : ImposedStokes
 
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 <<BeginOil>>

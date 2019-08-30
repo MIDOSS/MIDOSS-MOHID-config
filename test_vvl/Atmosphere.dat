@@ -7,9 +7,9 @@ NO_INTERPOLATION          : 1
  
 <beginproperty>
 NAME                      : atmospheric pressure
-UNITS                     : atm
+UNITS                     : Pa
 DESCRIPTION               : atmospheric pressure
-DEFAULTVALUE              : 1
+DEFAULTVALUE              : 101325
 FILE_IN_TIME              : NONE
 REMAIN_CONSTANT           : 1
 TIME_SERIE                : 0
