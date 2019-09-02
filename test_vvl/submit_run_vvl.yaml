@@ -1,6 +1,6 @@
-run_id: vvl_test_cedar_de0ae8ae112b
+run_id: vvl_test_cedar_de0ae8ae112b_ssh0
 account: def-allen
-walltime: 0:05:00
+walltime: 01:30:00
 
 paths:
   mohid repo: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-CODE/
