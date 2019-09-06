@@ -10,8 +10,8 @@ WAVE_HEIGHT               : 1
 WAVE_WCC                  : 1
 WAVE_DIRECTION            : 0
 ! Options to turn on/off Stokes Drift in Wave module; 1 is on; 0 is off
-STOKES_U                  : 0
-STOKES_V                  : 0
+!STOKES_U                  : 0
+!STOKES_V                  : 0
 
 <begin_waveperiod>
 NAME                      : mean wave period
