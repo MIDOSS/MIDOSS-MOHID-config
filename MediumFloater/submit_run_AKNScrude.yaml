@@ -1,19 +1,19 @@
-run_id: SOG_05jun15_12jun15_MediumFloater_AKNS_1000m3_de0ae8a_atm
+run_id: SOG_05jun15_12jun15_MediumFloater_AKNS_1000m3_vdo
 account: def-allen
-walltime: 01:30:00
+walltime: 00:05:00
 
 paths:
   mohid repo: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-CODE/
   runs directory: $SCRATCH/MIDOSS/runs/MediumFloater/AKNS
 
 forcing:
-  winds.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/SOG_05jun15_15jun15/winds.hdf5
-  currents.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/SOG_05jun15_15jun15/currents.hdf5
-  water_levels.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/SOG_05jun15_15jun15/t.hdf5
-  temperature.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/SOG_05jun15_15jun15/t.hdf5
-  salinity.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/SOG_05jun15_15jun15/t.hdf5
-  ww3.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/SOG_05jun15_15jun15/waves.hdf5
-  e3t.hdf5: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/inputs/SOG_05jun15_15jun15/e3t.hdf5
+  winds.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_05jun2015_15jun2015/vdo/winds.hdf5
+  currents.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_05jun2015_15jun2015/vdo/currents.hdf5
+  water_levels.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_05jun2015_15jun2015/vdo/t.hdf5
+  temperature.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_05jun2015_15jun2015/vdo/t.hdf5 
+  salinity.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_05jun2015_15jun2015/vdo/t.hdf5
+  ww3.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_05jun2015_15jun2015/vdo/waves.hdf5
+  e3t.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_05jun2015_15jun2015/vdo/e3t.hdf5
 
 bathymetry: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/AfterNEMOBathy201702.dat
 
