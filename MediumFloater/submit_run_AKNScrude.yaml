@@ -1,4 +1,4 @@
-run_id: SOG_05jun15_12jun15_MediumFloater_AKNS_1000m3_vdo
+run_id: SOG_05jun15_12jun15_MediumFloater_AKNS_1000m3_stokes
 account: def-allen
 walltime: 00:05:00
 
@@ -7,13 +7,13 @@ paths:
   runs directory: $SCRATCH/MIDOSS/runs/MediumFloater/AKNS
 
 forcing:
-  winds.hdf5: /scratch/dlatorne/MIDOSS/forcing/stokes_test/winds.hdf5
-  currents.hdf5: /scratch/dlatorne/MIDOSS/forcing/stokes_test/currents.hdf5
-  water_levels.hdf5: /scratch/dlatorne/MIDOSS/forcing/stokes_test/t.hdf5
-  temperature.hdf5: /scratch/dlatorne/MIDOSS/forcing/stokes_test/t.hdf5 
-  salinity.hdf5: /scratch/dlatorne/MIDOSS/forcing/stokes_test/t.hdf5
-  ww3.hdf5: /scratch/dlatorne/MIDOSS/forcing/stokes_test/waves.hdf5
-  e3t.hdf5: /scratch/dlatorne/MIDOSS/forcing/stokes_test/e3t.hdf5
+  winds.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_05jun2015_15jun2015/stokes_test/winds.hdf5
+  currents.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_05jun2015_15jun2015/stokes_test/currents.hdf5
+  water_levels.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_05jun2015_15jun2015/stokes_test/t.hdf5
+  temperature.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_05jun2015_15jun2015/stokes_test/t.hdf5 
+  salinity.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_05jun2015_15jun2015/stokes_test/t.hdf5
+  ww3.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_05jun2015_15jun2015/stokes_test/waves.hdf5
+  e3t.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_05jun2015_15jun2015/stokes_test/e3t.hdf5
 
 bathymetry: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/AfterNEMOBathy201702.dat
 
