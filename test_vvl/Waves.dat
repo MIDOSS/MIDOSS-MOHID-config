@@ -11,13 +11,16 @@ WAVE_HEIGHT               : 1
 WAVE_WCC                  : 1
 WAVE_DIRECTION            : 0
 REMAIN_CONSTANT           : 1
+! Options to turn on/off Stokes Drift in Wave module; 1 is on; 0 is off
+STOKES_U                  : 1
+STOKES_V                  : 1
+
 
 <begin_waveperiod>
 INITIALIZATION_METHOD     : CONSTANT
 REMAIN_CONSTANT           : 1
 DEFAULTVALUE              : 5
 <end_waveperiod>
-
 
 <begin_waveheight>
 INITIALIZATION_METHOD     : CONSTANT
@@ -30,6 +33,19 @@ INITIALIZATION_METHOD     : CONSTANT
 REMAIN_CONSTANT           : 1
 DEFAULTVALUE              : 0.001
 <end_wavewcc>
+
+! blocks to read in Stokes drift u and v
+<begin_StokesU>
+INITIALIZATION_METHOD     : CONSTANT
+REMAIN_CONSTANT           : 1
+DEFAULTVALUE              : 0
+<end_StokesU>
+
+<begin_StokesV>
+INITIALIZATION_METHOD     : CONSTANT
+REMAIN_CONSTANT           : 1
+DEFAULTVALUE              : 0
+<end_StokesV>
 
 !For more information about MOHID please visit MOHID's forum: http://www.mohid.com/forum/
 !Copyright (C) 2012. Action Modulers. http://www.actionmodulers.com
