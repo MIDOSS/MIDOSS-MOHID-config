@@ -77,7 +77,7 @@ ACCIDENT_METHOD           : 1
 
 ! settings for Stokes Drift
 !   STOKES_DRIFT : 0/1  [0] ! Wave-driven particle velocity (Stokes Drift)
-!   STOKES_DRIFT_METHOD : LonguetHigginsDeep/LonguetHigginsGeneric/ImposedStokes  [LonguetHigginsGeneric]  Stokes Drift Method, ImposedStokes needs the input Stokes U and Stokes V in wave.dat
+!   STOKES_DRIFT_METHOD : LonguetHigginsDeep/LonguetHigginsGeneric/ImposedStokes  [LonguetHigginsGeneric]  Stokes Drift Method, ImposedStokes needs the input Stokes U and Stokes V in wave.dat.  The only version we are currently setup to run is ImposedStokes, with WW3 inputs for Stokes U and Stokes V.
 !   WINDDRIFTCORRECTION     : 0/1/2 [0]     ! 0 = no wind drift correction;
 
 
@@ -106,8 +106,8 @@ WINDDRIFTCORRECTION       : 1
 WINDDRIFTANGLE            : 0
 WINDCOEF                  : 0.027
 
-STOKES_DRIFT              : 1
-STOKES_DRIFT_METHOD       : LonguetHigginsGeneric
+STOKES_DRIFT              : 0
+! STOKES_DRIFT_METHOD       : LonguetHigginsGeneric
 
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 <<BeginOil>>
