@@ -3,6 +3,7 @@
 !MODULE: Model
 !Please complete and comment/uncomment for your specific needs
 !
+! Note: Time period must be a multiple of DT
 !
 START                     : 2017 08 01 00 30 0
 END                       : 2017 08 07 22 30 0
