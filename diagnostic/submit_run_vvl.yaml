@@ -9,9 +9,8 @@ paths:
 forcing:
   currents.hdf5: $PROJECT/rmueller/MIDOSS/forcing/vvl_testing/currents_west_above2_north_below2.hdf5
   e3t.hdf5: $PROJECT/rmueller/MIDOSS/forcing/vvl_testing/e3t.hdf5
-  water_levels.hdf5: $PROJECT/rmueller/MIDOSS/forcing/vvl_testing/ssh_0.hdf5
   
-bathymetry: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/AfterNEMOBathy201702.dat
+bathymetry: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/AfterNEMOBathy201702_vvl.dat
 
 run data files:
   IN_MODEL: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/test_vvl/Model.dat
