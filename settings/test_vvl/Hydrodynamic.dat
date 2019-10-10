@@ -29,7 +29,9 @@ NAME                      : water level
 UNITS                     : m
 DIMENSION                 : 2D
 DEFAULTVALUE              : 0
-INITIALIZATION_METHOD     : CONSTANT
+INITIALIZATION_METHOD     : hdf
+FILE_IN_TIME              : hdf
+FILENAME                  : ./water_levels.hdf5
 <end_waterlevel>
 
 <begin_velocity_u>
