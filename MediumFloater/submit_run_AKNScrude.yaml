@@ -1,6 +1,6 @@
 run_id: SB_01aug2017_08aug2017_AKNS_stokes
 account: def-allen
-walltime: 00:05:00
+walltime: 01:30:00
 
 paths:
   mohid repo: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-CODE/
