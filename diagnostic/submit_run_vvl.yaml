@@ -9,8 +9,7 @@ paths:
 forcing:
   currents.hdf5: $PROJECT/rmueller/MIDOSS/forcing/vvl_testing/currents_west_above2_north_below2.hdf5
   e3t.hdf5: /scratch/dlatorne/MIDOSS/forcing/vvl_test/e3t.hdf5
-  ww3.hdf5: $PROJECT/rmueller/MIDOSS/forcing/vvl_testing/constant_waves_stokes.hdf5
-
+  
 bathymetry: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/AfterNEMOBathy201702_vvl.dat
 
 run data files:
