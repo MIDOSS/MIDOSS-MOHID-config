@@ -22,7 +22,7 @@ Rotation                   : 0
 !ATM_PRESSURE              : 1
 !ATM_PRESSURE_TYPE         : 1
 EVOLUTION                 : Imposed Solution
-NO_INTERPOLATION          : 0
+NO_INTERPOLATION          : 1
 
 <begin_waterlevel>
 NAME                      : water level
