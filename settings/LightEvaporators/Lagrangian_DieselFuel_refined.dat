@@ -180,16 +180,17 @@ BIOCOE                    : 1.0000E-01 1.0000E-01 1.6382E-01 1.9955E-02 5.0000E-
 ! CEMULS               [1.0E-6 -- 2.0E-6] % Percent of evaporated oil before emulsification begins 
 ! MAXVWATERCONTENT     [null_real]          Maximum % Volume Water Content
 
-EMULSIFICATIONMETHOD      : Fingas
+EMULSIFICATIONMETHOD      : Mackay
 EMULSPARAMETER            : 1.6E-6       
 CEMULS                    : 1.5E-6      
 MAXVWATERCONTENT          : 0.0         
 
    ! the following 4 are required if OIL_EMULSIFICATION: Fingas or Rasmussen
-   !ASPHALTENECONTENT         : 1.27
-   !WAXCONTENT                : 2.9
-   !RESINCONTENT              : 6.1
-   !SATURATECONTENT           : 75.0
+   !  This doesn't apply to light evaporators due to the lack of asphaltenes, etc. 
+   !ASPHALTENECONTENT         : NA
+   !WAXCONTENT                : NA
+   !RESINCONTENT              : NA
+   !SATURATECONTENT           : NA
 
 
 EVAPORATIONMETHOD         : EvaporativeExposure
