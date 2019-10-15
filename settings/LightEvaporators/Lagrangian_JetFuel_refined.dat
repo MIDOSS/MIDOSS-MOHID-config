@@ -15,7 +15,7 @@
 
 !~~~ Time settings ~~~
 ! Output time interval in seconds
-OUTPUT_TIME               : 0 1200
+OUTPUT_TIME               : 0 3600
 DT_PARTIC                 : 3600
 
 !~~~ Beaching flags and parameters ~~~
@@ -220,7 +220,6 @@ DISSOLUTIONMETHOD         : MultiComponents
 NAME                      : oil
 UNITS                     : m3
 AMBIENT_CONC              : 0
-!CONC_VARIABLE             : 1
 CONCENTRATION             : 1
 <<EndProperty>>
 

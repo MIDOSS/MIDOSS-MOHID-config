@@ -14,7 +14,7 @@
 
 !~~~ Time settings ~~~
 ! Output time interval in seconds
-OUTPUT_TIME               : 0 600
+OUTPUT_TIME               : 0 3600
 DT_PARTIC                 : 3600
 
 !~~~ Beaching flags and parameters ~~~
