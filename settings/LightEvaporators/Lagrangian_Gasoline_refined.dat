@@ -14,7 +14,7 @@
 
 !~~~ Time settings ~~~
 ! Output time interval in seconds
-OUTPUT_TIME               : 0 1200
+OUTPUT_TIME               : 0 3600
 DT_PARTIC                 : 3600
 
 !~~~ Beaching flags and parameters ~~~
@@ -144,6 +144,7 @@ USERCOEFVELMANCHA         : 10
 EVAPORATIONMETHOD         : EvaporativeExposure 
 
 ! If EVAPORATIONMETHOD: PseudoComponents, the following 4 parameters are required
+! *** THE VALUES BELOW ARE NOT FOR THIS OIL TYPE ***
    !ASPHALTENECONTENT         : 5
    !WAXCONTENT                : 2.9
    !RESINCONTENT              : 9
@@ -181,12 +182,12 @@ EMULSPARAMETER            : 1.6E-6
 CEMULS                    : 1.5E-6      
 MAXVWATERCONTENT          : 0.0         
 
-   ! the following 4 are required if OIL_EMULSIFICATION: Fingas or Rasmussen
-   !ASPHALTENECONTENT         : 1.27
-   !WAXCONTENT                : 2.9
-   !RESINCONTENT              : 6.1
-   !SATURATECONTENT           : 75.0
-
+! the following 4 are required if OIL_EMULSIFICATION: Fingas or Rasmussen
+! They aren't an option for Light Evaporators b/c of the lack of asphaltenes, etc. 
+    !ASPHALTENECONTENT         : NA
+    !WAXCONTENT                : NA
+    !RESINCONTENT              : NA
+    !SATURATECONTENT           : NA
 
 EVAPORATIONMETHOD         : EvaporativeExposure
 
@@ -219,7 +220,6 @@ DISSOLUTIONMETHOD         : MultiComponents
 NAME                      : oil
 UNITS                     : m3
 AMBIENT_CONC              : 0
-!CONC_VARIABLE             : 1
 CONCENTRATION             : 1
 <<EndProperty>>
 
