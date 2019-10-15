@@ -189,9 +189,6 @@ WAXCONTENT                : 2.9
 RESINCONTENT              : 9
 SATURATECONTENT           : 52
 
-
-EVAPORATIONMETHOD         : EvaporativeExposure
-
 !!! ** OIL_DISPERSION [1] **
 ! DISPERSIONMETHOD     [] Options: NewDispersion, Delvigne, Mackay
                                 !  NewDispersion (recommended):  Code in development.  Added by Shihan Li and based on

@@ -130,7 +130,7 @@ OIL_SPREADING             : 1
 OIL_EVAPORATION           : 1
 OIL_BIODEGRADATION        : 1
 OIL_DISSOLUTION           : 1
-OIL_EMULSIFICATION        : 1
+OIL_EMULSIFICATION        : 0
 OIL_DISPERSION            : 1
 OIL_SEDIMENTATION         : 0
 
@@ -170,26 +170,6 @@ MOLEWEIGHT                : 3.7000E01 8.8119E01 1.0438E02 2.1258E02 1.3000E02
 VAPORPRESSURE             : 2.9640E01 2.6817E-01 4.4773E-02 5.3219E-05 6.9330E-04
 SOLUBILITY                : 4.0000E01 4.0322E01 6.2063E02 2.8271 5.1000E04
 BIOCOE                    : 1.0000E-01 9.9690E-02 1.0000E-01 1.5692E-02 5.0000E-03
-
-!!! ** OIL_EMULSIFICATION [1] **
-! EMULSIFICATIONMETHOD [] Shihan says to see MOHID docs for refs
-! EMULSPARAMETER       [1.6E-6]           Water Uptake Parameter for Mackay's emulsification method 
-! CEMULS               [1.0E-6 -- 2.0E-6] % Percent of evaporated oil before emulsification begins 
-! MAXVWATERCONTENT     [null_real]          Maximum % Volume Water Content
-
-EMULSIFICATIONMETHOD      : Mackay        
-EMULSPARAMETER            : 1.6E-6       
-CEMULS                    : 1.5E-6      
-MAXVWATERCONTENT          : 0.0         
-
-   ! the following 4 are required if OIL_EMULSIFICATION: Fingas or Rasmussen
-   !ASPHALTENECONTENT         : 1.27
-   !WAXCONTENT                : 2.9
-   !RESINCONTENT              : 6.1
-   !SATURATECONTENT           : 75.0
-
-
-EVAPORATIONMETHOD         : EvaporativeExposure
 
 !!! ** OIL_DISPERSION [1] **
 ! DISPERSIONMETHOD     [] Options: NewDispersion, Delvigne, Mackay
