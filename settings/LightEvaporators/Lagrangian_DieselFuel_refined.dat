@@ -14,7 +14,7 @@
 
 !~~~ Time settings ~~~
 ! Output time interval in seconds
-OUTPUT_TIME               : 0 1200
+OUTPUT_TIME               : 0 3600
 DT_PARTIC                 : 3600
 
 !~~~ Beaching flags and parameters ~~~
@@ -77,10 +77,12 @@ ACCIDENT_METHOD           : 1
 
 ! settings for Stokes Drift
 !   STOKES_DRIFT : 0/1  [0] ! Wave-driven particle velocity (Stokes Drift)
-!   STOKES_DRIFT_METHOD : LonguetHigginsDeep/LonguetHigginsGeneric/ImposedStokes  [LonguetHigginsGeneric]  Stokes Drift Method, ImposedStokes needs the input Stokes U and Stokes V in wave.dat
+!   STOKES_DRIFT_METHOD : LonguetHigginsDeep/LonguetHigginsGeneric/ImposedStokes  [LonguetHigginsGeneric]  
+!                         ImposedStokes needs the input Stokes U and Stokes V
+!                         in wave.dat.  ImposedStokes is the only version we
+!                         are currently setup to run, using WW3 inputs for
+!                         Stokes U and Stokes V.
 !   WINDDRIFTCORRECTION     : 0/1/2 [0]     ! 0 = no wind drift correction;
-
-
 
 DEPTH_FROM_FREE_SURFACE   : 0
 FLOAT                     : 0
@@ -145,6 +147,7 @@ USERCOEFVELMANCHA         : 10
 EVAPORATIONMETHOD         : EvaporativeExposure 
 
 ! If EVAPORATIONMETHOD: PseudoComponents, the following 4 parameters are required
+! *** CHECK TO MAKE SURE THESE ARE THE RIGHT VALUES FOR THIS OIL TYPE ***
    !ASPHALTENECONTENT         : 5
    !WAXCONTENT                : 2.9
    !RESINCONTENT              : 9
@@ -220,7 +223,6 @@ DISSOLUTIONMETHOD         : MultiComponents
 NAME                      : oil
 UNITS                     : m3
 AMBIENT_CONC              : 0
-!CONC_VARIABLE             : 1
 CONCENTRATION             : 1
 <<EndProperty>>
 
