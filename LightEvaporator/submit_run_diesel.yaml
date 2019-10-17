@@ -1,4 +1,4 @@
-run_id: SB_01aug2017_08aug2017_Diesel
+run_id: SB_07dec2018_14dec2018_Diesel
 account: def-allen
 walltime: 03:00:00
 
@@ -7,13 +7,13 @@ paths:
   runs directory: $SCRATCH/MIDOSS/runs/LightEvaporators/diesel
 
 forcing:
-  winds.hdf5: /scratch/dlatorne/MIDOSS/forcing/SB_01aug2017_08aug2017/winds.hdf5
-  currents.hdf5: /scratch/dlatorne/MIDOSS/forcing/SB_01aug2017_08aug2017/currents.hdf5
-  water_levels.hdf5: /scratch/dlatorne/MIDOSS/forcing/SB_01aug2017_08aug2017/t.hdf5
-  temperature.hdf5: /scratch/dlatorne/MIDOSS/forcing/SB_01aug2017_08aug2017/t.hdf5
-  salinity.hdf5: /scratch/dlatorne/MIDOSS/forcing/SB_01aug2017_08aug2017/t.hdf5
-  ww3.hdf5: /scratch/dlatorne/MIDOSS/forcing/SB_01aug2017_08aug2017/waves_stokes.hdf5
-  e3t.hdf5: /scratch/dlatorne/MIDOSS/forcing/SB_01aug2017_08aug2017/e3t.hdf5
+  winds.hdf5: /scratch/dlatorne/MIDOSS/forcing/SB_07dec2018_14dec2018/winds.hdf5
+  currents.hdf5: /scratch/dlatorne/MIDOSS/forcing/SB_07dec2018_14dec2018/currents.hdf5
+  water_levels.hdf5: /scratch/dlatorne/MIDOSS/forcing/SB_07dec2018_14dec2018/t.hdf5
+  temperature.hdf5: /scratch/dlatorne/MIDOSS/forcing/SB_07dec2018_14dec2018/t.hdf5
+  salinity.hdf5: /scratch/dlatorne/MIDOSS/forcing/SB_07dec2018_14dec2018/t.hdf5
+  ww3.hdf5: /scratch/dlatorne/MIDOSS/forcing/SB_07dec2018_14dec2018/waves_stokes.hdf5
+  e3t.hdf5: /scratch/dlatorne/MIDOSS/forcing/SB_07dec2018_14dec2018/e3t.hdf5
     
 bathymetry: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/AfterNEMOBathy201702_rdm_v04.dat
 
