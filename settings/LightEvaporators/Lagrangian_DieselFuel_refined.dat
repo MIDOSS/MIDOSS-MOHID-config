@@ -43,7 +43,7 @@ BEACHING_LIMIT            : 5
 ! POINT_VOLUME     [] Volume of oil spilled in m^3
 ! ACCIDENT_METHOD  [1] Way to calculate initial area of accident: [1] Fay or [2] Thickness
 
-POSITION_COORDINATES       : -123.24 48.69  
+POSITION_COORDINATES       : -123.67 49.21  
 ORIGIN_NAME               : OilSpill
 GROUP_ID                  : 1
 NBR_PARTIC                : 2000
