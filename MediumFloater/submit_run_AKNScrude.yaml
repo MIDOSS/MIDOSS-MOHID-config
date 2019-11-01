@@ -1,19 +1,19 @@
-run_id: SB_01aug2017_08aug2017_AKNS_stokes
+run_id: SOG_15jan2018_22jan2018_AKNS
 account: def-allen
-walltime: 01:30:00
+walltime: 03:00:00
 
 paths:
   mohid repo: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-CODE/
   runs directory: $SCRATCH/MIDOSS/runs/MediumFloater/AKNS
 
 forcing:
-  winds.hdf5: /scratch/dlatorne/MIDOSS/forcing/SB_01aug2017_08aug2017/winds.hdf5
-  currents.hdf5: /scratch/dlatorne/MIDOSS/forcing/SB_01aug2017_08aug2017/currents.hdf5
-  water_levels.hdf5: /scratch/dlatorne/MIDOSS/forcing/SB_01aug2017_08aug2017/t.hdf5
-  temperature.hdf5: /scratch/dlatorne/MIDOSS/forcing/SB_01aug2017_08aug2017/t.hdf5 
-  salinity.hdf5: /scratch/dlatorne/MIDOSS/forcing/SB_01aug2017_08aug2017/t.hdf5
-  ww3.hdf5: /scratch/dlatorne/MIDOSS/forcing/SB_01aug2017_08aug2017/waves_stokes.hdf5
-  e3t.hdf5: /scratch/dlatorne/MIDOSS/forcing/SB_01aug2017_08aug2017/e3t.hdf5
+  winds.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_15jan2018_22jan2018/winds.hdf5
+  currents.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_15jan2018_22jan2018/currents.hdf5
+  water_levels.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_15jan2018_22jan2018/t.hdf5
+  temperature.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_15jan2018_22jan2018/t.hdf5 
+  salinity.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_15jan2018_22jan2018/t.hdf5
+  ww3.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_15jan2018_22jan2018/waves_stokes.hdf5
+  e3t.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_15jan2018_22jan2018/e3t.hdf5
 
 bathymetry: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/testing.dat
 
