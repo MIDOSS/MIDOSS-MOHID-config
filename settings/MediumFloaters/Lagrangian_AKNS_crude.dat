@@ -14,8 +14,8 @@
 
 !~~~ Time settings ~~~
 ! Output time interval in seconds
-OUTPUT_TIME               : 0 1200
-DT_PARTIC                 : 1200
+OUTPUT_TIME               : 0 3600
+DT_PARTIC                 : 3600
 
 !~~~ Beaching flags and parameters ~~~
 ! [0] Associates Beaching Probabilities: 0 or 1
@@ -27,7 +27,7 @@ DT_PARTIC                 : 1200
 ASSOCIATE_BEACH_PROB      : 1
 OUTPUT_CONC               : 1
 DEFAULT_BEACHING_PROB     : 0.5
-BEACHING_LIMIT            : 250
+BEACHING_LIMIT            : 5
 
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 <BeginOrigin>
@@ -43,7 +43,7 @@ BEACHING_LIMIT            : 250
 ! POINT_VOLUME     [] Volume of oil spilled in m^3
 ! ACCIDENT_METHOD  [1] Way to calculate initial area of accident: [1] Fay or [2] Thickness
 
-POSITION_COORDINATES       : -123.67 49.21  
+POSITION_COORDINATES       : -122.86 48.38  
 ORIGIN_NAME               : OilSpill
 GROUP_ID                  : 1
 NBR_PARTIC                : 2000
@@ -188,6 +188,9 @@ ASPHALTENECONTENT         : 5
 WAXCONTENT                : 2.9
 RESINCONTENT              : 9
 SATURATECONTENT           : 52
+
+
+EVAPORATIONMETHOD         : EvaporativeExposure
 
 !!! ** OIL_DISPERSION [1] **
 ! DISPERSIONMETHOD     [] Options: NewDispersion, Delvigne, Mackay
