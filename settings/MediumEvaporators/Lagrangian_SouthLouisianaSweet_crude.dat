@@ -17,6 +17,7 @@
 !~~~ Time settings ~~~
 OUTPUT_TIME               : 0 3600  
 DT_PARTIC                 : 3600  
+VERT_STEPS                : 60
 
 !~~~ Beaching flags and parameters ~~~
 ! [0] Associates Beaching Probabilities: 0 or 1
@@ -64,7 +65,7 @@ ACCIDENT_METHOD           : 1
 ! The following 2 keywords are read if TURB_V : Constant
 ! VARVELVX    [0.0]  Set to zero to turn off vertical random walk
 ! VARVELV     [0.0]
-
+! VERTICAL_MOVEMENT      [SullivanAllen]   Options for vertical random walk: Visserwithwave\Visser\SullivanAllen
 ! ADVECTION   [1] Move Particle due horizontal velocity: 0 or 1.
 ! ADVECTION_Z [1] Move Particle due vertical velocity: 0 or 1.
 ! METHOD_FLOAT_VEL [1] Method to compute rising velocity of submerged droplets
@@ -91,7 +92,8 @@ FLOAT                     : 0
 
 MOVEMENT                  : SullivanAllen
 VARVELHX                  : 0.02        
-VARVELH                   : 0.0        
+VARVELH                   : 0.0   
+VERTICAL_MOVEMENT         : Visserwithwave     
 TURB_V                    : Constant  
 VARVELVX                  : 0.001    
 VARVELV                   : 0.0     
