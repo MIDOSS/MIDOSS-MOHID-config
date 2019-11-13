@@ -16,7 +16,7 @@
 ! Output time interval in seconds
 OUTPUT_TIME               : 0 1200
 DT_PARTIC                 : 1200
-VERT_STEPS                : 60
+VERT_STEPS                : 200
 
 !~~~ Beaching flags and parameters ~~~
 ! [0] Associates Beaching Probabilities: 0 or 1

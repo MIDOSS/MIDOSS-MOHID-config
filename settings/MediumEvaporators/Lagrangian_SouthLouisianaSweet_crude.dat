@@ -17,7 +17,7 @@
 !~~~ Time settings ~~~
 OUTPUT_TIME               : 0 3600  
 DT_PARTIC                 : 3600  
-VERT_STEPS                : 60
+VERT_STEPS                : 600
 
 !~~~ Beaching flags and parameters ~~~
 ! [0] Associates Beaching Probabilities: 0 or 1
