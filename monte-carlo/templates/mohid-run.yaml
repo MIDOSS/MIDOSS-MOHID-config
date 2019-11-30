@@ -1,0 +1,33 @@
+run_id: {{ job_id }}-{{ run_number }}
+# These account and walltime values are irrelevant in the Monte-Carlo GLOST run context
+# because they are provided in the GLOST job description YAML file
+account: some-account
+walltime: 99:59:59
+
+paths:
+  mohid repo: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-CODE/
+  runs directory: $SCRATCH/MIDOSS/runs/monte-carlo/
+
+forcing:
+  winds.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_{{ start_ddmmmyyy }}_{{ end_ddmmmyyy }}/winds.hdf5
+  currents.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_{{ start_ddmmmyyyy }}_{{ end_ddmmmyyyy }}/currents.hdf5
+  water_levels.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_{{ start_ddmmmyyyy }}_{{ end_ddmmmyyyy }}/t.hdf5
+  temperature.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_{{ start_ddmmmyyyy }}_{{ end_ddmmmyyyy }}/t.hdf5
+  salinity.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_{{ start_ddmmmyyyy }}_{{ end_ddmmmyyyy }}/t.hdf5
+  ww3.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_{{ start_ddmmmyyyy }}_{{ end_ddmmmyyyy }}/waves_stokes.hdf5
+  e3t.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_{{ start_ddmmmyyyy }}_{{ end_ddmmmyyyy }}/e3t.hdf5
+
+bathymetry: $PROJECT/$USER/MIDOSS//MIDOSS-MOHID-grid/testing.dat
+
+run data files:
+  IN_MODEL: {{ job_dir }}/mohid-yaml/Model-{{ run_number }}.dat
+  PARTIC_DATA: {{ job_dir }}/mohid-yaml/Lagrangian_AKNS_crude-{{ run_number }}.dat
+  DOMAIN: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-grid/Geometry.dat
+  SURF_DAT: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/monte-carlo/Atmosphere.dat
+  IN_DAD3D: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/monte-carlo/Hydrodynamic.dat
+  BOT_DAT: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/monte-carlo/InterfaceSedimentWater.dat
+  AIRW_DAT: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/monte-carlo/InterfaceWaterAir.dat
+  IN_TIDES: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/monte-carlo/Tide.dat
+  IN_TURB: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/monte-carlo/Turbulence.dat
+  DISPQUAL: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/monte-carlo/WaterProperties.dat
+  WAVES_DAT: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/monte-carlo/Waves.dat
