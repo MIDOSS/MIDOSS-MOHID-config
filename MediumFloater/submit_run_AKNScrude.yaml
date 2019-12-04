@@ -1,6 +1,6 @@
 run_id: SOG_15jan2018_22jan2018_AKNS
 account: rrg-allen
-walltime: 03:00:00
+walltime: 00:05:00
 
 paths:
   mohid repo: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-CODE/
