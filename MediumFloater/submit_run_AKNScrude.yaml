@@ -12,7 +12,7 @@ forcing:
   water_levels.hdf5: /scratch/dlatorne/MIDOSS/forcing/03jun18-04jun18/t.hdf5
   temperature.hdf5: /scratch/dlatorne/MIDOSS/forcing/03jun18-04jun18/t.hdf5 
   salinity.hdf5: /scratch/dlatorne/MIDOSS/forcing/03jun18-04jun18/t.hdf5
-  ww3.hdf5: /scratch/dlatorne/MIDOSS/forcing/03jun18-04jun18/waves_stokes.hdf5
+  ww3.hdf5: /scratch/dlatorne/MIDOSS/forcing/03jun18-04jun18/waves.hdf5
   e3t.hdf5: /scratch/dlatorne/MIDOSS/forcing/03jun18-04jun18/e3t.hdf5
 
 bathymetry: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/testing.dat
