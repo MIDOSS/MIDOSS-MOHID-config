@@ -17,7 +17,7 @@ DIMENSION                 : 3D
 DEFAULTVALUE              : 0
 INITIALIZATION_METHOD     : hdf
 FILE_IN_TIME              : hdf
-FILENAME                  : ./t.hdf5
+FILENAME                  : ./temperature.hdf5
 <end_diffusivity_v>
 
 OUTPUT_HDF                : 0
