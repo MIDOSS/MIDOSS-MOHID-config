@@ -94,7 +94,7 @@ FLOAT                     : 0
 MOVEMENT                  : SullivanAllen
 VARVELHX                  : 0.02
 VARVELH                   : 0.0
-VERTICAL_MOVEMENT         : Visser
+VERTICAL_MOVEMENT         : SullivanAllen
 TURB_V                    : Constant
 VARVELVX                  : 0.001
 VARVELV                   : 0.0
