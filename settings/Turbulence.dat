@@ -17,9 +17,7 @@ DIMENSION                 : 3D
 DEFAULTVALUE              : 0
 INITIALIZATION_METHOD     : hdf
 FILE_IN_TIME              : hdf
-FILENAME                  : I:\MOHID test data\hdf\St_georgia_diffusivity3.hdf5
-
-!FILENAME                  : C:\Users\Shihan Li\Documents\Mohid Studio\Projects\st_georgia_nested\res\Turbulence_19.hdf5
+FILENAME                  : ./t.hdf5
 <end_diffusivity_v>
 
 OUTPUT_HDF                : 0
