@@ -21,7 +21,7 @@ bathymetry: $PROJECT/$USER/MIDOSS//MIDOSS-MOHID-grid/testing.dat
 
 run data files:
   IN_MODEL: {{ job_dir }}/mohid-yaml/Model-{{ run_number }}.dat
-  PARTIC_DATA: {{ job_dir }}/mohid-yaml/Lagrangian_AKNS_crude-{{ run_number }}.dat
+  PARTIC_DATA: {{ job_dir }}/mohid-yaml/{{ Lagrangian_template }}-{{ run_number }}.dat
   DOMAIN: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-grid/Geometry.dat
   SURF_DAT: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/monte-carlo/Atmosphere.dat
   IN_DAD3D: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/monte-carlo/Hydrodynamic.dat
