@@ -17,7 +17,7 @@ forcing:
   ww3.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_{{ start_ddmmmyy }}_{{ end_ddmmmyy }}/waves_stokes.hdf5
   e3t.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_{{ start_ddmmmyy }}_{{ end_ddmmmyy }}/e3t.hdf5
 
-bathymetry: $PROJECT/$USER/MIDOSS//MIDOSS-MOHID-grid/testing.dat
+bathymetry: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-grid/testing.dat
 
 run data files:
   IN_MODEL: {{ job_dir }}/mohid-yaml/Model-{{ run_number }}.dat
