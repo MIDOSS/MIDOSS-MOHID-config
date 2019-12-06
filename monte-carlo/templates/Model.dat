@@ -1,0 +1,15 @@
+! Note: Time period must be a multiple of DT
+!
+START                     : {{ start_yyyy_mm_dd }} 00 30 0
+END                       : {{ end_yyyy_mm_dd }} 23 30 0
+DT                        : 3600
+
+VARIABLEDT                : 0
+OPENMP_NUM_THREADS        : 1
+GMTREFERENCE              : 0
+LAGRANGEANE               : 1
+LAGRANGIAN                : 1
+WAVES                     : 1
+NO_ISOLATED_CELLS         : 0
+!
+! EOF
