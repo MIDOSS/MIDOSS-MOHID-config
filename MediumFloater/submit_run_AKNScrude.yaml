@@ -1,5 +1,5 @@
-run_id: SOG_01jan17-08jan17_AKNS
-account: def-allen
+run_id: SOG_03jun18-04jun18_AKNS
+account: rrg-allen
 walltime: 0:05:00
 
 paths:
@@ -7,13 +7,13 @@ paths:
   runs directory: $SCRATCH/MIDOSS/runs/MediumFloater/AKNS
 
 forcing:
-  winds.hdf5: /scratch/dlatorne/MIDOSS/forcing/01jan17-08jan17/winds.hdf5
-  currents.hdf5: /scratch/dlatorne/MIDOSS/forcing/01jan17-08jan17/currents.hdf5
-  water_levels.hdf5: /scratch/dlatorne/MIDOSS/forcing/01jan17-08jan17/t.hdf5
-  temperature.hdf5: /scratch/dlatorne/MIDOSS/forcing/01jan17-08jan17/t.hdf5 
-  salinity.hdf5: /scratch/dlatorne/MIDOSS/forcing/01jan17-08jan17/t.hdf5
-  ww3.hdf5: /scratch/dlatorne/MIDOSS/forcing/01jan17-08jan17/waves.hdf5
-  e3t.hdf5: /scratch/dlatorne/MIDOSS/forcing/01jan17-08jan17/e3t.hdf5
+  winds.hdf5: /scratch/dlatorne/MIDOSS/forcing/03jun18-04jun18/winds.hdf5
+  currents.hdf5: /scratch/dlatorne/MIDOSS/forcing/03jun18-04jun18/currents.hdf5
+  water_levels.hdf5: /scratch/dlatorne/MIDOSS/forcing/03jun18-04jun18/t.hdf5
+  temperature.hdf5: /scratch/dlatorne/MIDOSS/forcing/03jun18-04jun18/t.hdf5 
+  salinity.hdf5: /scratch/dlatorne/MIDOSS/forcing/03jun18-04jun18/t.hdf5
+  ww3.hdf5: /scratch/dlatorne/MIDOSS/forcing/03jun18-04jun18/waves.hdf5
+  e3t.hdf5: /scratch/dlatorne/MIDOSS/forcing/03jun18-04jun18/e3t.hdf5
 
 bathymetry: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/testing.dat
 
