@@ -5,8 +5,8 @@
 !
 ! Note: Time period must be a multiple of DT
 !
-START                     : 2018 01 15 00 30 0
-END                       : 2018 01 21 22 30 0
+START                     : 2018 06 03 00 30 0
+END                       : 2018 06 03 22 30 0
 DT                        : 3600
 
 VARIABLEDT                : 0
