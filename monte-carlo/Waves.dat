@@ -1,0 +1,93 @@
+!MOHID Studio Sample Data File
+!This file contains the most common options.
+!MODULE: Waves
+!Please complete and comment/uncomment for your specific needs
+!
+!
+!
+WAVE_PERIOD               : 1
+WAVE_HEIGHT               : 1
+WAVE_WCC                  : 1
+WAVE_DIRECTION            : 0
+! Options to turn on/off Stokes Drift in Wave module; 1 is on; 0 is off
+STOKES_U                  : 1
+STOKES_V                  : 1
+WAVE_LENGTH               : 1
+
+<begin_waveperiod>
+NAME                      : mean wave period
+UNITS                     : s
+DIMENSION                 : 2D
+DEFAULTVALUE              : 0
+INITIALIZATION_METHOD     : hdf
+FILE_IN_TIME              : hdf
+FILENAME                  : ./ww3.hdf5
+OUTPUT_HDF                : 0
+<end_waveperiod>
+
+
+<begin_waveheight>
+NAME                      : significant wave height
+UNITS                     : m
+DIMENSION                 : 2D
+DEFAULTVALUE              : 0
+INITIALIZATION_METHOD     : hdf
+FILE_IN_TIME              : hdf
+FILENAME                  : ./ww3.hdf5
+OUTPUT_HDF                : 0
+<end_waveheight>
+
+<begin_wavewcc>
+NAME                      : whitecap coverage
+UNITS                     : 1
+DIMENSION                 : 2D
+DEFAULTVALUE              : 0
+INITIALIZATION_METHOD     : hdf
+FILE_IN_TIME              : hdf
+FILENAME                  : ./ww3.hdf5
+OUTPUT_HDF                : 0
+<end_wavewcc>
+
+
+<begin_wavelength>
+NAME                      : mean wave length
+UNITS                     : s
+DIMENSION                 : 2D
+DEFAULTVALUE              : 0
+INITIALIZATION_METHOD     : hdf
+FILE_IN_TIME              : hdf
+FILENAME                  : ./ww3.hdf5
+OUTPUT_HDF                : 0
+<end_wavelength>
+
+
+! blocks to read in Stokes drift u and v
+<begin_StokesU>
+NAME                      : StokesU
+UNITS                     : 1
+DIMENSION                 : 2D
+DEFAULTVALUE              : 0.
+INITIALIZATION_METHOD     : hdf
+FILE_IN_TIME              : hdf
+FILENAME                  : ./ww3.hdf5
+OUTPUT_HDF                : 0
+OUTPUT_TIME               : 0 3600
+<end_StokesU>
+
+<begin_StokesV>
+NAME                      : StokesV
+UNITS                     : 1
+DIMENSION                 : 2D
+DEFAULTVALUE              : 0.
+INITIALIZATION_METHOD     : hdf
+FILE_IN_TIME              : hdf
+FILENAME                  : ./ww3.hdf5
+OUTPUT_HDF                : 0
+OUTPUT_TIME               : 0 3600
+<end_StokesV>
+
+
+!
+!For more information about MOHID please visit MOHID's forum: http://www.mohid.com/forum/
+!Copyright (C) 2012. Action Modulers. http://www.actionmodulers.com
+!
