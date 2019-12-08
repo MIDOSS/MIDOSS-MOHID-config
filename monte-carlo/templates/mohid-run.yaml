@@ -23,11 +23,11 @@ run data files:
   IN_MODEL: {{ job_dir }}/mohid-yaml/Model-{{ run_number }}.dat
   PARTIC_DATA: {{ job_dir }}/mohid-yaml/{{ Lagrangian_template }}-{{ run_number }}.dat
   DOMAIN: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-grid/Geometry.dat
-  SURF_DAT: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/monte-carlo/Atmosphere.dat
-  IN_DAD3D: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/monte-carlo/Hydrodynamic.dat
-  BOT_DAT: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/monte-carlo/InterfaceSedimentWater.dat
-  AIRW_DAT: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/monte-carlo/InterfaceWaterAir.dat
-  IN_TIDES: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/monte-carlo/Tide.dat
-  IN_TURB: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/monte-carlo/Turbulence.dat
-  DISPQUAL: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/monte-carlo/WaterProperties.dat
-  WAVES_DAT: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/monte-carlo/Waves.dat
+  SURF_DAT: {{ mohid_config }}/Atmosphere.dat
+  IN_DAD3D: {{ mohid_config }}/Hydrodynamic.dat
+  BOT_DAT: {{ mohid_config }}/InterfaceSedimentWater.dat
+  AIRW_DAT: {{ mohid_config }}/InterfaceWaterAir.dat
+  IN_TIDES: {{ mohid_config }}/Tide.dat
+  IN_TURB: {{ mohid_config }}/Turbulence.dat
+  DISPQUAL: {{ mohid_config }}/WaterProperties.dat
+  WAVES_DAT: {{ mohid_config }}/Waves.dat
