@@ -16,6 +16,7 @@ forcing:
   salinity.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_{{ start_ddmmmyy }}_{{ end_ddmmmyy }}/t.hdf5
   ww3.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_{{ start_ddmmmyy }}_{{ end_ddmmmyy }}/waves_stokes.hdf5
   e3t.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_{{ start_ddmmmyy }}_{{ end_ddmmmyy }}/e3t.hdf5
+  diffusivity.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_{{ start_ddmmmyy }}_{{ end_ddmmmyy }}/t.hdf5
 
 bathymetry: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-grid/testing.dat
 
