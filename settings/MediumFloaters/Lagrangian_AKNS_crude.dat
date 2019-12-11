@@ -162,7 +162,7 @@ EVAPORATIONMETHOD         : Fingas
    FINGAS_EVAP_EMP_DATA      : 1
    FINGAS_EVAP_CONST_1       : 2.86
    FINGAS_EVAP_CONST_2       : 0.045
-!   PERC_MASSDIST180          : 
+!   PERC_MASSDIST180          : Fill in as needed
 
 
 !!! ** OIL_BIODEGREDATION [1] **
