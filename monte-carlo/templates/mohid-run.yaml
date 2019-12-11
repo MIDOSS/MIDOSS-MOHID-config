@@ -9,14 +9,14 @@ paths:
   runs directory: $SCRATCH/MIDOSS/runs/monte-carlo/
 
 forcing:
-  winds.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_{{ start_ddmmmyy }}_{{ end_ddmmmyy }}/winds.hdf5
-  currents.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_{{ start_ddmmmyy }}_{{ end_ddmmmyy }}/currents.hdf5
-  water_levels.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_{{ start_ddmmmyy }}_{{ end_ddmmmyy }}/t.hdf5
-  temperature.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_{{ start_ddmmmyy }}_{{ end_ddmmmyy }}/t.hdf5
-  salinity.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_{{ start_ddmmmyy }}_{{ end_ddmmmyy }}/t.hdf5
-  ww3.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_{{ start_ddmmmyy }}_{{ end_ddmmmyy }}/waves_stokes.hdf5
-  e3t.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_{{ start_ddmmmyy }}_{{ end_ddmmmyy }}/e3t.hdf5
-  diffusivity.hdf5: /scratch/dlatorne/MIDOSS/forcing/SOG_{{ start_ddmmmyy }}_{{ end_ddmmmyy }}/t.hdf5
+  winds.hdf5: /scratch/dlatorne/MIDOSS/forcing/{{ start_ddmmmyy }}-{{ end_ddmmmyy }}/winds.hdf5
+  currents.hdf5: /scratch/dlatorne/MIDOSS/forcing/{{ start_ddmmmyy }}-{{ end_ddmmmyy }}/currents.hdf5
+  water_levels.hdf5: /scratch/dlatorne/MIDOSS/forcing/{{ start_ddmmmyy }}-{{ end_ddmmmyy }}/t.hdf5
+  temperature.hdf5: /scratch/dlatorne/MIDOSS/forcing/{{ start_ddmmmyy }}-{{ end_ddmmmyy }}/t.hdf5
+  salinity.hdf5: /scratch/dlatorne/MIDOSS/forcing/{{ start_ddmmmyy }}-{{ end_ddmmmyy }}/t.hdf5
+  ww3.hdf5: /scratch/dlatorne/MIDOSS/forcing/{{ start_ddmmmyy }}-{{ end_ddmmmyy }}/waves_stokes.hdf5
+  e3t.hdf5: /scratch/dlatorne/MIDOSS/forcing/{{ start_ddmmmyy }}-{{ end_ddmmmyy }}/e3t.hdf5
+  diffusivity.hdf5: /scratch/dlatorne/MIDOSS/forcing/{{ start_ddmmmyy }}-{{ end_ddmmmyy }}/t.hdf5
 
 bathymetry: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-grid/testing.dat
 
