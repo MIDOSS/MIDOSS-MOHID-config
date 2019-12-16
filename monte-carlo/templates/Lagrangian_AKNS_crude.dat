@@ -146,7 +146,7 @@ USERCOEFVELMANCHA         : 10
 !!! ** OIL_EVAPORATION [1] **
 ! EVAPORATIONMETHOD [EvaporativeExposure] Options: EvaporativeExposure/PseudoComponents/Fingas
 
-EVAPORATIONMETHOD         : Fingas
+EVAPORATIONMETHOD         : EvaporativeExposure
 
 ! If EVAPORATIONMETHOD: PseudoComponents, the following 4 parameters are required
    !ASPHALTENECONTENT         : 5
@@ -155,14 +155,14 @@ EVAPORATIONMETHOD         : Fingas
    !SATURATECONTENT           : 52
 
 ! If EVAPORATIONMETHOD: Fingas, the following 3 parameters are required
-! The evaporation constants used below are from Fingas (2015), Chapter 7:
+! The evaporation constants used below are from Fingas (2015), Chapter 7
 !   Handbook of oil spill science and technology. CONST_2 is the
 !   multiplier for temperature(SST) in Ev = (2.86 + 0.045 * SST) * ln(time)
    FINGAS_EVAP_EQTYPE        : Logarithmic
    FINGAS_EVAP_EMP_DATA      : 1
    FINGAS_EVAP_CONST_1       : 2.86
    FINGAS_EVAP_CONST_2       : 0.045
-!   PERC_MASSDIST180          :
+!   PERC_MASSDIST180          
 
 
 !!! ** OIL_BIODEGREDATION [1] **
