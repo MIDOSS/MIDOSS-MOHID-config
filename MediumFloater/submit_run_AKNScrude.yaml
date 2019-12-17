@@ -1,4 +1,4 @@
-run_id: SOG_03jun18-04jun18_AKNS
+run_id: SOG_03jun18-04jun18_FingasEvapTest
 account: def-allen
 walltime: 0:05:00
 
@@ -15,7 +15,7 @@ forcing:
   ww3.hdf5: /scratch/dlatorne/MIDOSS/forcing/03jun18-04jun18/waves.hdf5
   e3t.hdf5: /scratch/dlatorne/MIDOSS/forcing/03jun18-04jun18/e3t.hdf5
 
-bathymetry: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/testing.dat
+bathymetry: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/AfterNEMOBathy201702_rdm_v04.dat
 
 run data files:
   IN_MODEL: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Model.dat
