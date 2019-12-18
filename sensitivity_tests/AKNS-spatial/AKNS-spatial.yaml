@@ -1,0 +1,23 @@
+job id: AKNS-spatial
+account: def-allen
+email: dlatorne@eoas.ubc.ca
+nodes: 1
+tasks per node: 23
+runs per glost job: 22
+mem per cpu: 14100M
+run walltime: 2:00:00
+
+paths:
+  runs directory: $SCRATCH/MIDOSS/runs/monte-carlo/
+  mohid config: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/monte-carlo/
+
+mohid command: $HOME/.local/bin/mohid
+
+vcs revisions:
+  hg:
+    - $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-CODE
+    - $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config
+    - $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-grid
+    - $PROJECT/$USER/MIDOSS/MOHID-Cmd
+    - $PROJECT/$USER/MIDOSS/NEMO-Cmd
+    - $PROJECT/$USER/MIDOSS/moad_tools
