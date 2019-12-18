@@ -1,6 +1,6 @@
 run_id: SOG_21nov17-28nov17
 account: def-allen
-walltime: 0:05:00
+walltime: 1:30:00
 
 paths:
   mohid repo: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-CODE/
