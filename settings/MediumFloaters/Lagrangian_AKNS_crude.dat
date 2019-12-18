@@ -158,8 +158,8 @@ EVAPORATIONMETHOD         : Fingas
 ! The evaporation constants used below are from Fingas (2015, Chapter 7),
 !   Handbook of oil spill science and technology. CONST_2 is the 
 !   multiplier for temperature(SST) in Ev = (2.86 + 0.045 * SST) * ln(time)
-FINGAS_EVAP_EQTYPE        : Logarithmic
-FINGAS_EVAP_EMP_DATA      : 1
+FINGAS_EVAP_EQTYPE       : Logarithmic
+FINGAS_EVAP_EMP_DATA     : 1
 FINGAS_EVAP_CONST1       : 2.86
 FINGAS_EVAP_CONST2       : 0.045
 !   PERC_MASSDIST180          : Fill in as needed
@@ -196,9 +196,6 @@ ASPHALTENECONTENT         : 5
 WAXCONTENT                : 2.9
 RESINCONTENT              : 9
 SATURATECONTENT           : 52
-
-
-EVAPORATIONMETHOD         : EvaporativeExposure
 
 !!! ** OIL_DISPERSION [1] **
 ! DISPERSIONMETHOD     [] Options: NewDispersion, Delvigne, Mackay
