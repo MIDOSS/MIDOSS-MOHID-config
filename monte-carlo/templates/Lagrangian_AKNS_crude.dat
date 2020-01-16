@@ -198,7 +198,7 @@ RESINCONTENT              : 9
 SATURATECONTENT           : 52
 
 
-EVAPORATIONMETHOD         : EvaporativeExposure
+EVAPORATIONMETHOD         : Fingas
 
 !!! ** OIL_DISPERSION [1] **
 ! DISPERSIONMETHOD     [] Options: NewDispersion, Delvigne, Mackay
