@@ -14,9 +14,9 @@
 
 !~~~ Time settings ~~~
 ! Output time interval in seconds
-OUTPUT_TIME               : 0 1200
-DT_PARTIC                 : 1200
-VERT_STEPS                : 200
+OUTPUT_TIME               : 0 3600
+DT_PARTIC                 : 3600
+VERT_STEPS                : 600
 
 !~~~ Beaching flags and parameters ~~~
 ! [0] Associates Beaching Probabilities: 0 or 1
@@ -27,8 +27,8 @@ VERT_STEPS                : 200
 
 ASSOCIATE_BEACH_PROB      : 1
 OUTPUT_CONC               : 1
-DEFAULT_BEACHING_PROB     : 0.5
-BEACHING_LIMIT            : 250
+DEFAULT_BEACHING_PROB     : 1
+BEACHING_LIMIT            : 500
 
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 <BeginOrigin>
@@ -92,7 +92,7 @@ FLOAT                     : 0
 MOVEMENT                  : SullivanAllen
 VARVELHX                  : 0.02
 VARVELH                   : 0.0
-VERTICAL_MOVEMENT         : Visserwithwave
+VERTICAL_MOVEMENT         : Visser
 TURB_V                    : Constant
 VARVELVX                  : 0.001
 VARVELV                   : 0.0
@@ -147,7 +147,7 @@ USERCOEFVELMANCHA         : 10
 !!! ** OIL_EVAPORATION [1] **
 ! EVAPORATIONMETHOD [EvaporativeExposure] Options: EvaporativeExposure/PseudoComponents/Fingas
 
-EVAPORATIONMETHOD         : EvaporativeExposure 
+EVAPORATIONMETHOD         : Fingas
 
 ! If EVAPORATIONMETHOD: PseudoComponents, the following 4 parameters are required
 ! *** CHECK TO MAKE SURE THESE ARE THE RIGHT VALUES FOR THIS OIL TYPE ***
@@ -157,9 +157,14 @@ EVAPORATIONMETHOD         : EvaporativeExposure
    !SATURATECONTENT           : 52
 
 ! If EVAPORATIONMETHOD: Fingas, the following 3 parameters are required
-   !FINGAS_EVAP_EQTYPE        : Logarithmic
-   !FINGAS_EVAP_EMP_DATA      : 0
-   !PERC_MASSDIST180          : 22
+! The evaporation constants used below are from Fingas (2015, Chapter 7),
+!   Handbook of oil spill science and technology. CONST_2 is the
+!   multiplier for temperature(SST) in Ev = (0.31 + 0.018 * SST) * sqrt(time)
+FINGAS_EVAP_EQTYPE       : SquareRoot
+FINGAS_EVAP_EMP_DATA     : 1
+FINGAS_EVAP_CONST1       : 0.31
+FINGAS_EVAP_CONST2       : 0.018   
+!PERC_MASSDIST180          : 22
 
 
 !!! ** OIL_BIODEGREDATION [1] **
