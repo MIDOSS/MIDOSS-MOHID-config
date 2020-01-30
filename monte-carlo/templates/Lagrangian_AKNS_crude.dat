@@ -160,8 +160,8 @@ EVAPORATIONMETHOD         : Fingas
 !   multiplier for temperature(SST) in Ev = (2.86 + 0.045 * SST) * ln(time)
    FINGAS_EVAP_EQTYPE        : Logarithmic
    FINGAS_EVAP_EMP_DATA      : 1
-   FINGAS_EVAP_CONST       : 2.86
-   FINGAS_EVAP_CONST       : 0.045
+   FINGAS_EVAP_CONST1       : 2.86
+   FINGAS_EVAP_CONST2       : 0.045
 !   PERC_MASSDIST180          
 
 
