@@ -27,8 +27,8 @@ VERT_STEPS                : 600
 
 ASSOCIATE_BEACH_PROB      : 1
 OUTPUT_CONC               : 1
-DEFAULT_BEACHING_PROB     : 1
-BEACHING_LIMIT            : 500
+DEFAULT_BEACHING_PROB     : 0.5
+BEACHING_LIMIT            : 250
 
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 <BeginOrigin>
@@ -140,7 +140,7 @@ OIL_SEDIMENTATION         : 0
 
 !~~~ Weathering parameters corresponding to flags ~~~
 !!! ** OIL_SPREADING [1]  **
-SPREADINGMETHOD           : ThicknessGradient
+SPREADINGMETHOD           : Fingas
 USERCOEFVELMANCHA         : 10
 
 !!! ** OIL_EVAPORATION [1] **
