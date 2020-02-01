@@ -15,7 +15,7 @@ forcing:
   ww3.hdf5: /scratch/dlatorne/MIDOSS/forcing/21nov17-28nov17/waves.hdf5
   e3t.hdf5: /scratch/dlatorne/MIDOSS/forcing/21nov17-28nov17/e3t.hdf5
 
-bathymetry: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/AfterNEMOBathy201702_rdm_v04.dat
+bathymetry: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/AfterNEMOBathy201702_rdm.dat
 
 run data files:
   IN_MODEL: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Model.dat
