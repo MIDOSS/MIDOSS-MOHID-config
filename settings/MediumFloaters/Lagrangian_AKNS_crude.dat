@@ -146,7 +146,7 @@ USERCOEFVELMANCHA         : 10
 !!! ** OIL_EVAPORATION [1] **
 ! EVAPORATIONMETHOD [EvaporativeExposure] Options: EvaporativeExposure/PseudoComponents/Fingas
 
-EVAPORATIONMETHOD         : EvaporativeExposure
+EVAPORATIONMETHOD         : Fingas
 
 ! If EVAPORATIONMETHOD: PseudoComponents, the following 4 parameters are required
    !ASPHALTENECONTENT         : 5
