@@ -14,7 +14,7 @@ paths:
 mohid command: $HOME/.local/bin/mohid
 
 vcs revisions:
-  hg:
+  git:
     - $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-CODE
     - $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config
     - $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-grid
