@@ -8,6 +8,7 @@ mem per cpu: 14500M
 run walltime: 3:00:00
 
 paths:
+  forcing directory: $SCRATCH/MIDOSS/forcing/
   runs directory: $SCRATCH/MIDOSS/runs/monte-carlo/
   mohid config: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config/monte-carlo/
 
