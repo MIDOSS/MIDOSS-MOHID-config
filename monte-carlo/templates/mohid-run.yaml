@@ -6,7 +6,7 @@ walltime: 99:59:59
 
 paths:
   mohid repo: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-CODE/
-  runs directory: $SCRATCH/MIDOSS/runs/monte-carlo/
+  runs directory: {{ runs_dir }}
 
 forcing:
   winds.hdf5: {{ forcing_dir }}/{{ start_ddmmmyy }}-{{ end_ddmmmyy }}/winds.hdf5
