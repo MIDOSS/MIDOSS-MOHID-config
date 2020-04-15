@@ -1,0 +1,59 @@
+paths:
+  salishseacast: $PROJECT/MIDOSS/forcing/nowcast-green.201905/
+  hrdps: $PROJECT/SalishSea/forcing/atmospheric/GEM2.5/operational/
+  wavewatch3: $PROJECT/MIDOSS/forcing/wwatch3/
+
+  wind_weights: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-grid/hrdps_interpolation_weights.nc
+  wave_weights: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-grid/wavewatch3_interpolation_weights.nc
+
+  output: {{ forcing_dir }}
+
+
+salish_seacast_forcing:
+  currents:
+    currents_u_hdf5_filename: currents.hdf5
+    currents_v_hdf5_filename: currents.hdf5
+
+  vertical_velocity:
+    hdf5_filename: currents.hdf5
+
+  salinity:
+    hdf5_filename: t.hdf5
+
+  temperature:
+    hdf5_filename: t.hdf5
+
+  sea_surface_height:
+    hdf5_filename: t.hdf5
+
+  e3t:
+    hdf5_filename: e3t.hdf5
+
+  diffusivity:
+    hdf5_filename: t.hdf5
+
+
+hrdps_forcing:
+  winds:
+    wind_u_hdf5_filename: winds.hdf5
+    wind_v_hdf5_filename: winds.hdf5
+
+
+wavewatch3_forcing:
+  whitecap_coverage:
+    hdf5_filename: waves.hdf5
+
+  mean_wave_period:
+    hdf5_filename: waves.hdf5
+
+  mean_wave_length:
+    hdf5_filename: waves.hdf5
+
+  significant_wave_height:
+    hdf5_filename: waves.hdf5
+
+  stokesU:
+    hdf5_filename: waves.hdf5
+
+  stokesV:
+    hdf5_filename: waves.hdf5
