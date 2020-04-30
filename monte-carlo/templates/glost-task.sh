@@ -2,3 +2,4 @@
 && {{ mohid_cmd }} run --no-submit --tmp-run-dir $MONTE_CARLO/{{ job_id }}-{{ run_number }}/ \
   $MONTE_CARLO/mohid-yaml/{{ job_id }}-{{ run_number }}.yaml $MONTE_CARLO/results/{{ job_id }}-{{ run_number }}/ \
 && bash $MONTE_CARLO/{{ job_id }}-{{ run_number }}/MOHID.sh
+rm -rf {{ forcing_dir }}/{{ job_id }}-{{ run_number }}/
