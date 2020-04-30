@@ -3,6 +3,8 @@ paths:
   hrdps: $PROJECT/SalishSea/forcing/atmospheric/GEM2.5/operational/
   wavewatch3: $PROJECT/MIDOSS/forcing/wwatch3/
 
+  salishseacast grid: $PROJECT/$USER/MIDOSS/SalishSeaCast-grid/mesh_mask201702.nc
+
   wind_weights: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-grid/hrdps_interpolation_weights.nc
   wave_weights: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-grid/wavewatch3_interpolation_weights.nc
 
