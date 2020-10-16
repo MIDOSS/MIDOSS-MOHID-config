@@ -1,10 +1,10 @@
-run_id: SB_21nov2017_28nov2017_Diesel_EvapExp
+run_id: TP_21nov2017_28nov2017_CLB
 account: rrg-allen
 walltime: 03:00:00
 
 paths:
   mohid repo: $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-CODE/
-  runs directory: $SCRATCH/MIDOSS/runs/LightEvaporators/diesel
+  runs directory: $SCRATCH/MIDOSS/runs/HeavySinkers/CLB
 
 forcing:
   winds.hdf5: /scratch/dlatorne/MIDOSS/forcing/21nov17-28nov17/winds.hdf5
@@ -19,7 +19,7 @@ bathymetry: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/AfterNEMOBathy201702.dat
 
 run data files:
   IN_MODEL: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Model.dat
-  PARTIC_DATA: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/LightEvaporators/Lagrangian_DieselFuel_refined.dat
+  PARTIC_DATA: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/HeavySinker/Lagrangian_CLB_crude.dat
   DOMAIN: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-grid/Geometry.dat
   SURF_DAT: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Atmosphere.dat
   IN_DAD3D: $PROJECT/rmueller/MIDOSS/MIDOSS-MOHID-config/settings/Hydrodynamic.dat
@@ -36,5 +36,6 @@ vcs revisions:
     - $PROJECT/$USER/MIDOSS/moad_tools
     - $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-grid
     - $PROJECT/$USER/MIDOSS/NEMO-Cmd
+  hg:
     - $PROJECT/$USER/MIDOSS/MIDOSS-MOHID-config
 
