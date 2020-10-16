@@ -1,15 +1,33 @@
-    # Config items for random-oil-spills script
+# Config items for random-oil-spills script
 
-    # Starting and ending dates of period from which
-    # spill dates and hours are to be selected
-    start date: 2015-01-01
-    end date: 2018-12-31
+# Starting and ending dates of period from which
+# spill dates and hours are to be selected
+start date: 2015-01-01
+end date: 2018-12-31
 
-    # Directory path to read AIS GeoTIFF files from
-    geotiffs dir: /media/doug/warehouse/MIDOSS/ShipTrackDensityGeoTIFFs/
+# Directory path to read AIS GeoTIFF files from
+geotiffs dir: /media/doug/warehouse/MIDOSS/ShipTrackDensityGeoTIFFs/
 
-    # File to read SalishSeaCast NEMO domain water mask for AIS GeoTIFF files from
-    geotiff watermask: /media/doug/warehouse/MIDOSS/ShipTrackDensityGeoTIFFs/geotiff-watermask.npy
+# Directory path to read AIS vessel track shapefiles from
+shapefiles dir: /media/doug/warehouse/MIDOSS/ShipTrackShapefiles/
 
-    # File to read SalishSeaCast NEMO mesh mask from
-    nemo meshmask: /media/doug/warehouse/MEOPAR/grid/mesh_mask201702.nc
+# File to read SalishSeaCast NEMO domain water mask for AIS GeoTIFF files from
+geotiff watermask: /media/doug/warehouse/MIDOSS/ShipTrackDensityGeoTIFFs/geotiff-watermask.npy
+
+# File to read SalishSeaCast NEMO mesh mask from
+nemo meshmask: /media/doug/warehouse/MEOPAR/grid/mesh_mask201702.nc
+
+# List of vessel types
+vessel types:
+  - tanker
+  - atb
+  - barge
+  - cargo
+  - cruise
+  - ferry
+  - fishing
+  - smallpass
+  - other
+
+# File to read oil attribution data from
+oil attribution: /media/doug/warehouse/MIDOSS/marine_transport_data/oil_attribution.yaml
