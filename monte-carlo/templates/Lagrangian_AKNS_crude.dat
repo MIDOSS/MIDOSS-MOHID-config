@@ -140,8 +140,7 @@ OIL_SEDIMENTATION         : 0
 
 !~~~ Weathering parameters corresponding to flags ~~~
 !!! ** OIL_SPREADING [1]  **
-SPREADINGMETHOD           : ThicknessGradient
-USERCOEFVELMANCHA         : 10
+SPREADINGMETHOD           : Fay
 
 !!! ** OIL_EVAPORATION [1] **
 ! EVAPORATIONMETHOD [EvaporativeExposure] Options: EvaporativeExposure/PseudoComponents/Fingas
