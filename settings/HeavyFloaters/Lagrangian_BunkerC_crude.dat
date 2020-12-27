@@ -44,13 +44,13 @@ BEACHING_LIMIT            : 250
 ! POINT_VOLUME     [] Volume of oil spilled in m^3
 ! ACCIDENT_METHOD  [1] Way to calculate initial area of accident: [1] Fay or [2] Thickness
 
-POSITION_COORDINATES       : -122.86 48.38  
+POSITION_COORDINATES       : -123.67 49.21  
 ORIGIN_NAME               : OilSpill
 GROUP_ID                  : 1
 NBR_PARTIC                : 2000
 EMISSION_SPATIAL          : Accident
 EMISSION_TEMPORAL         : Instantaneous
-POINT_VOLUME              : 1000 
+POINT_VOLUME              : 10000 
 ACCIDENT_METHOD           : 1        
 
 !~~~ Oil advection/movement specifications ~~~
@@ -140,8 +140,7 @@ OIL_SEDIMENTATION         : 0
 
 !~~~ Weathering parameters corresponding to flags ~~~
 !!! ** OIL_SPREADING [1]  **
-SPREADINGMETHOD           : ThicknessGradient
-USERCOEFVELMANCHA         : 10
+SPREADINGMETHOD           : Fay
 
 !!! ** OIL_EVAPORATION [1] **
 ! EVAPORATIONMETHOD [EvaporativeExposure] Options: EvaporativeExposure/PseudoComponents/Fingas
@@ -158,7 +157,6 @@ FINGAS_EVAP_CONST1       : 0.31
 FINGAS_EVAP_CONST2       : 0.045
 !   PERC_MASSDIST180          : Fill in as needed
 
-
 !!! ** OIL_BIODEGREDATION [1] **
 ! Biodegredataion groups were derived from OSCAR database by Shihan Li
 ! The following coeffients reflect OSCAR oil type named: Alaskan North Slope (IKU) F
@@ -168,10 +166,10 @@ FINGAS_EVAP_CONST2       : 0.045
 ! SOLUBILITY           [ppm]
 ! BIOCOE               [per day]
 
-ANALYTEPERCENTAGE         : 1.0E-03 2E-02 9.982E01 9E-02 0.000
+ANALYTEPERCENTAGE         : 1.0000E-03 2.0000E-02 9.9820E01 9.0000E-02 0.0000E00
 MOLEWEIGHT                : 5.2250E-01 1.3075E02 4.5737E02 1.7228E02 1.3000E02
 VAPORPRESSURE             : 3.0580E-02 2.7450E-03 6.5624E-06 3.0104E-05 6.9330E-04
-SOLUBILITY                : 1.7271E-01 3.5000E01 4.2759E-07 8.7669 5.1000E04 
+SOLUBILITY                : 1.7271E-01 3.5000E01 4.2759E-07 8.7669E00 5.1000E04 
 BIOCOE                    : 6.0000E-04 1.0000E-01 5.3771E-03 2.9444E-02 5.0000E-03
 
 !!! ** OIL_EMULSIFICATION [1] **
