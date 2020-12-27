@@ -2,7 +2,7 @@
 ! Oil type: Alaska North Slope Crude (Middle Pipeline)
 ! Reference Material
 !    - OSCAR (Biodegradation parameters are from OSCAR database, Alaskan North Slope (IKU) F)
-!    - Environment Canada (Shihan: Can you insert the EC website link here?)
+!    - Environment Canada (Alaska North Slope - Middle Pipeline, http://www.etc-cte.ec.gc.ca/databases/oilproperties/default.aspx)
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ! This input file defines parameters used in oil weathering and transport
 !
@@ -50,7 +50,7 @@ GROUP_ID                  : 1
 NBR_PARTIC                : 2000
 EMISSION_SPATIAL          : Accident
 EMISSION_TEMPORAL         : Instantaneous
-POINT_VOLUME              : 1000
+POINT_VOLUME              : 10000
 ACCIDENT_METHOD           : 1
 
 !~~~ Oil advection/movement specifications ~~~
@@ -159,8 +159,8 @@ EVAPORATIONMETHOD         : Fingas
 !   multiplier for temperature(SST) in Ev = (2.86 + 0.045 * SST) * ln(time)
    FINGAS_EVAP_EQTYPE        : Logarithmic
    FINGAS_EVAP_EMP_DATA      : 1
-   FINGAS_EVAP_CONST1       : 2.86
-   FINGAS_EVAP_CONST2       : 0.045
+   FINGAS_EVAP_CONST1        : 2.86
+   FINGAS_EVAP_CONST2        : 0.045
 !   PERC_MASSDIST180          
 
 
@@ -173,11 +173,11 @@ EVAPORATIONMETHOD         : Fingas
 ! SOLUBILITY           [ppm]
 ! BIOCOE               [per day]
 
-ANALYTEPERCENTAGE         : 13.6 2.61 82.67 1.13 0.01
-MOLEWEIGHT                : 9.29E01 1.057011494E02 3.687520866E02 1.761327434E02 1.3E02
-VAPORPRESSURE             : 4.79E00 2.48E-02 1.01E-04 2.87E-05 6.93E-04
-SOLUBILITY                : 2.307208456E01 3.465517241E02 5.3424E-06 8.259566372 5.1000E04
-BIOCOE                    : 1.0E-01 1.0E-01 1.0487601E-02 2.9389381E-02 5.0E-03
+ANALYTEPERCENTAGE         : 1.3600E01 2.6100E00 8.2670E01 1.1300E00 1.0000E-02
+MOLEWEIGHT                : 9.2890E01 1.0570E02 3.6875E02 1.7613E02 1.3000E02
+VAPORPRESSURE             : 4.7889E00 2.4806E-02 1.0092E-04 2.8717E-05 6.9330E-04
+SOLUBILITY                : 2.3072E01 3.4655E02 5.3424E-06 8.2596E00 5.1000E04
+BIOCOE                    : 1.0000E-01 1.0000E-01 1.0488E-02 2.9389E-02 5.0000E-03
 
 !!! ** OIL_EMULSIFICATION [1] **
 ! EMULSIFICATIONMETHOD [] Shihan says to see MOHID docs for refs [Tested with Mackay and Fingas]
