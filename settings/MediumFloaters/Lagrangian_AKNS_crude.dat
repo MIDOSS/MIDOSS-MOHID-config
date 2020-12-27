@@ -2,7 +2,7 @@
 ! Oil type: Alaska North Slope Crude (Middle Pipeline)
 ! Reference Material
 !    - OSCAR (Biodegradation parameters are from OSCAR database, Alaskan North Slope (IKU) F)
-!    - Environment Canada (Shihan: Can you insert the EC website link here?)
+!    - Environment Canada (http://www.etc-cte.ec.gc.ca/databases/oilproperties/default.aspx)
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ! This input file defines parameters used in oil weathering and transport
 !
