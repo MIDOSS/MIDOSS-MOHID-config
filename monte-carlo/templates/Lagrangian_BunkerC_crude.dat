@@ -44,7 +44,7 @@ BEACHING_LIMIT            : 250
 ! POINT_VOLUME     [] Volume of oil spilled in m^3
 ! ACCIDENT_METHOD  [1] Way to calculate initial area of accident: [1] Fay or [2] Thickness
 
-POSITION_COORDINATES       : {{ spill_lon }} {{ spill_lat }}
+POSITION_COORDINATES      : {{ spill_lon }} {{ spill_lat }}
 ORIGIN_NAME               : OilSpill
 GROUP_ID                  : 1
 NBR_PARTIC                : 2000
@@ -148,13 +148,14 @@ SPREADINGMETHOD           : Fay
 EVAPORATIONMETHOD         : Fingas
 
 ! If EVAPORATIONMETHOD: Fingas, the following 4 parameters are required
-! The evaporation constants used below are from Anchorage (long term) Bunker-C values in
+! The evaporation constants used below are from Anchorage (short term) Bunker-C values in
 ! Fingas (2015) and: http://www.etc-cte.ec.gc.ca/databases/oilproperties/default.aspx
-!   CONST_2 is the multiplier for temperature(SST) in Ev = (0.31 + 0.045 * SST) * ln(time)
-FINGAS_EVAP_EQTYPE       : Logarithmic
+!   CONST_2 is the multiplier for temperature(SST) in Ev = (-0.13 + 0.013 * SST) * sqrt(time)
+
+FINGAS_EVAP_EQTYPE       : SquareRoot
 FINGAS_EVAP_EMP_DATA     : 1
-FINGAS_EVAP_CONST1       : 0.31
-FINGAS_EVAP_CONST2       : 0.045
+FINGAS_EVAP_CONST1       : -0.13
+FINGAS_EVAP_CONST2       : 0.013
 !   PERC_MASSDIST180          : Fill in as needed
 
 !!! ** OIL_BIODEGREDATION [1] **
@@ -178,11 +179,12 @@ BIOCOE                    : 6.0000E-04 1.0000E-01 5.3771E-03 2.9444E-02 5.0000E-
 ! CEMULS               [1.0E-6 -- 2.0E-6] % Percent of evaporated oil before emulsification begins 
 ! MAXVWATERCONTENT     [null_real]          Maximum % Volume Water Content
 
-EMULSIFICATIONMETHOD      : Fingas        
+EMULSIFICATIONMETHOD      : Mackay
 EMULSPARAMETER            : 1.6E-6       
 CEMULS                    : 1.5E-6
 
-! not sure about this water content value       
+! Technically, this is ``Water content'' from the following source:
+! http://www.etc-cte.ec.gc.ca/databases/OilProperties/pdf/WEB_Bunker_C_Fuel_Oil.pdf
 MAXVWATERCONTENT          : 26         
 
 ! the following 4 are required if OIL_EMULSIFICATION: Fingas or Rasmussen OR if EVAPORATION is Pseudocomponent
@@ -209,8 +211,10 @@ SATURATECONTENT           : 25
 
 DISPERSIONMETHOD          : NewDispersion
 
-! This value was NM in the reference doc., so I kept at 40
-! Not sure where this value comes from. ls 
+! This value was NM in Anchorage reference doc., so we are using the value 
+! for fresh water at room temperature, given by the bunker-c oil type documented here:
+! http://www.etc-cte.ec.gc.ca/databases/OilProperties/pdf/WEB_Bunker_C_Fuel_Oil.pdf 
+
 OWINTERFACIALTENSION      : 40
 
 !!! ** OIL_DISSOLUTION [1] **
