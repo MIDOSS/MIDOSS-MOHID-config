@@ -185,7 +185,7 @@ BIOCOE                    : 1.0000E-01 1.0000E-01 1.0488E-02 2.9389E-02 5.0000E-
 ! CEMULS               [1.0E-6 -- 2.0E-6] % Percent of evaporated oil before emulsification begins
 ! MAXVWATERCONTENT     [null_real]          Maximum % Volume Water Content
 
-EMULSIFICATIONMETHOD      : Fingas
+EMULSIFICATIONMETHOD      : Mackay
 EMULSPARAMETER            : 1.6E-6
 CEMULS                    : 1.5E-6
 MAXVWATERCONTENT          : 62
