@@ -50,7 +50,7 @@ BEACHING_LIMIT            : 250
 POSITION_COORDINATES       : {{ spill_lon }} {{ spill_lat }}
 ORIGIN_NAME               : OilSpill
 GROUP_ID                  : 1
-NBR_PARTIC                : 2000
+NBR_PARTIC                : 10000
 EMISSION_SPATIAL          : Accident
 EMISSION_TEMPORAL         : Instantaneous
 POINT_VOLUME              : 10000 

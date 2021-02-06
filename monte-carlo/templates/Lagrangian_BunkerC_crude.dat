@@ -47,7 +47,7 @@ BEACHING_LIMIT            : 250
 POSITION_COORDINATES      : {{ spill_lon }} {{ spill_lat }}
 ORIGIN_NAME               : OilSpill
 GROUP_ID                  : 1
-NBR_PARTIC                : 2000
+NBR_PARTIC                : 10000
 EMISSION_SPATIAL          : Accident
 EMISSION_TEMPORAL         : Instantaneous
 POINT_VOLUME              : 10000 
@@ -183,7 +183,7 @@ EMULSIFICATIONMETHOD      : Mackay
 EMULSPARAMETER            : 1.6E-6       
 CEMULS                    : 1.5E-6
 
-! Technically, this is ``Water content'' from the following source:
+! Technically, this is ``Water content'' from the following source
 ! http://www.etc-cte.ec.gc.ca/databases/OilProperties/pdf/WEB_Bunker_C_Fuel_Oil.pdf
 MAXVWATERCONTENT          : 26         
 
