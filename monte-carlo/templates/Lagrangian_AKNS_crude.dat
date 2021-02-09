@@ -154,12 +154,15 @@ EVAPORATIONMETHOD         : Fingas
    !SATURATECONTENT           : 52
 
 ! If EVAPORATIONMETHOD: Fingas, the following 3 parameters are required
-! The evaporation constants used below are from Fingas (2015), Chapter 7
-!   Handbook of oil spill science and technology. CONST_2 is the
-!   multiplier for temperature(SST) in Ev = (2.86 + 0.045 * SST) * ln(time)
+! The evaporation constants shown on the Environment Canada website are 
+! slightly different than those listed in Fingas (2015), Chapter 7
+! Handbook of oil spill science and technology, which is  
+!   Ev = (2.86 + 0.045 * SST) * ln(time)
+! where  CONST_2 is the multiplier for temperature(SST).  Here, we use
+! CONST_1 as given in the EC website
    FINGAS_EVAP_EQTYPE        : Logarithmic
    FINGAS_EVAP_EMP_DATA      : 1
-   FINGAS_EVAP_CONST1        : 2.86
+   FINGAS_EVAP_CONST1        : 2.64
    FINGAS_EVAP_CONST2        : 0.045
 !   PERC_MASSDIST180          
 
