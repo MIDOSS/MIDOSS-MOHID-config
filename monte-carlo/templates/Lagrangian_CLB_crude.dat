@@ -1,8 +1,11 @@
 ﻿!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-! Oil type: Alaska North Slope Crude (Middle Pipeline)
+! Oil type: Cold Lake Blend 
 ! Reference Material
-!    - OSCAR (Biodegradation parameters are from OSCAR database, Alaskan North Slope (IKU) F)
-!    - Environment Canada (Alaska North Slope - Middle Pipeline, http://www.etc-cte.ec.gc.ca/databases/oilproperties/default.aspx)
+!    - Environment Canada (http://www.etc-cte.ec.gc.ca/databases/OilProperties/pdf/WEB_Cold_Lake_Blend.pdf)
+!    - Evaporation constants and CEMULS from Fed Gov, Properties, Composition and Marine Spill Behavior, 
+!         Fate and Transport of Two Diluted Bitumen Products from the Canadian Oil Sands, 
+!         Government of Canada, 2013
+!    - Max. Water Content from Johannessen et al. (2019), https://doi.org/10.1016/j.marpolbul.2019.110691
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ! This input file defines parameters used in oil weathering and transport
 !
@@ -44,19 +47,19 @@ BEACHING_LIMIT            : 250
 ! POINT_VOLUME     [] Volume of oil spilled in m^3
 ! ACCIDENT_METHOD  [1] Way to calculate initial area of accident: [1] Fay or [2] Thickness
 
-POSITION_COORDINATES      : {{ spill_lon }} {{ spill_lat }}
+POSITION_COORDINATES       : {{ spill_lon }} {{ spill_lat }}
 ORIGIN_NAME               : OilSpill
 GROUP_ID                  : 1
 NBR_PARTIC                : 10000
 EMISSION_SPATIAL          : Accident
 EMISSION_TEMPORAL         : Instantaneous
-POINT_VOLUME              : 10000
-ACCIDENT_METHOD           : 1
+POINT_VOLUME              : 10000 
+ACCIDENT_METHOD           : 1        
 
 !~~~ Oil advection/movement specifications ~~~
 ! DEPTH_FROM_FREE_SURFACE  []  Use "0" for surface spills
 ! FLOAT    [] Use "1" to keep all the particles on the surface and "0" to allow them to sink
-! MOVEMENT [] Options are: SullivanAllen or NotRandom.
+! MOVEMENT [] Options are: SullivanAllen or NotRandom.  
 !             If MOVEMENT: SullivanAllen the the following 5 options need to be defined
 ! VARVELHX [0.2]
 ! VARVELH  [0.0]
@@ -68,21 +71,21 @@ ACCIDENT_METHOD           : 1
 
 ! ADVECTION   [1] Move Particle due horizontal velocity: 0 or 1.
 ! ADVECTION_Z [1] Move Particle due vertical velocity: 0 or 1.
-! METHOD_FLOAT_VEL [1] Method to compute rising velocity of submerged droplets
+! METHOD_FLOAT_VEL [1] Method to compute rising velocity of submerged droplets 
 !                      : 1 - SoaresDosSantos, 2 - PADM,  3 - Zheng
 ! AREA_METHOD
-! METHOD_BW_DROPLETS_DIAMETER
+! METHOD_BW_DROPLETS_DIAMETER 
 ! DENSITY_METHOD [2] Way to calculate particle density: 1 - LeendertseState, 2 - UNESCOState
-! WINDDRIFTCORRECTION
+! WINDDRIFTCORRECTION      
 ! WINDDRIFTANGLE [0] Wind Drift Angle Correction due to Coriolis
 ! WINDCOEF       [0.03] Wind transfer Coefficient.  See, e.g., Kim et al. (2014)
 
 ! settings for Stokes Drift
 !   STOKES_DRIFT : 0/1  [0] ! Wave-driven particle velocity (Stokes Drift)
-!   STOKES_DRIFT_METHOD : LonguetHigginsDeep/LonguetHigginsGeneric/ImposedStokes  [LonguetHigginsGeneric]
-!                         ImposedStokes needs the input Stokes U and Stokes V
-!                         in wave.dat.  ImposedStokes is the only version we
-!                         are currently setup to run, using WW3 inputs for
+!   STOKES_DRIFT_METHOD : LonguetHigginsDeep/LonguetHigginsGeneric/ImposedStokes  [LonguetHigginsGeneric]  
+!                         ImposedStokes needs the input Stokes U and Stokes V 
+!                         in wave.dat.  ImposedStokes is the only version we 
+!                         are currently setup to run, using WW3 inputs for 
 !                         Stokes U and Stokes V.
 !   WINDDRIFTCORRECTION     : 0/1/2 [0]     ! 0 = no wind drift correction;
 
@@ -122,11 +125,11 @@ STOKES_DRIFT_METHOD       : ImposedStokes
 ! [0] de-activate setting, [1] activate setting
 
 OILTYPE                   : Crude       ! [] Options: Crude or Refined
-API                       : 29.9
-POURPOINT                 : -54         ! Pour point [-] (ºC)
-TEMPVISCREF               : 15.           ! Temperature of reference viscosity [-] (ºC)
-VISCREF                   : 16.           ! Reference Dynamic Viscosity [-] (cP)
-DT_OIL_INTPROCESSES       : 60  ! Time step for weathering processes, in seconds
+API                       : 22.6
+POURPOINT                 : -45.0        ! Pour point [-] (ºC)
+TEMPVISCREF               : 15.0        ! Temperature of reference viscosity [-] (ºC)
+VISCREF                   : 150.0     ! Reference Dynamic Viscosity [-] (cP)
+DT_OIL_INTPROCESSES       : 60.0        ! Time step for weathering processes, in seconds
 OIL_TIMESERIE             : OilOutput
 
 !~~~ Weathering flags ~~~
@@ -141,6 +144,7 @@ OIL_SEDIMENTATION         : 0
 !~~~ Weathering parameters corresponding to flags ~~~
 !!! ** OIL_SPREADING [1]  **
 SPREADINGMETHOD           : Fay
+USERCOEFVELMANCHA         : 10
 
 !!! ** OIL_EVAPORATION [1] **
 ! EVAPORATIONMETHOD [EvaporativeExposure] Options: EvaporativeExposure/PseudoComponents/Fingas
@@ -154,17 +158,11 @@ EVAPORATIONMETHOD         : Fingas
    !SATURATECONTENT           : 52
 
 ! If EVAPORATIONMETHOD: Fingas, the following 3 parameters are required
-! The evaporation constants shown on the Environment Canada website are 
-! slightly different than those listed in Fingas (2015), Chapter 7
-! Handbook of oil spill science and technology, which is  
-!   Ev = (2.86 + 0.045 * SST) * ln(time)
-! where  CONST_2 is the multiplier for temperature(SST).  Here, we use
-! CONST_1 as given in the EC website
-   FINGAS_EVAP_EQTYPE        : Logarithmic
-   FINGAS_EVAP_EMP_DATA      : 1
-   FINGAS_EVAP_CONST1        : 2.64
-   FINGAS_EVAP_CONST2        : 0.045
-!   PERC_MASSDIST180          
+FINGAS_EVAP_EQTYPE       : Logarithmic
+FINGAS_EVAP_EMP_DATA     : 1
+FINGAS_EVAP_CONST1       : 1.51
+FINGAS_EVAP_CONST2       : -0.045
+!   PERC_MASSDIST180          : Fill in as needed
 
 
 !!! ** OIL_BIODEGREDATION [1] **
@@ -176,28 +174,28 @@ EVAPORATIONMETHOD         : Fingas
 ! SOLUBILITY           [ppm]
 ! BIOCOE               [per day]
 
-ANALYTEPERCENTAGE         : 1.3600E01 2.6100E00 8.2670E01 1.1300E00 1.0000E-02
-MOLEWEIGHT                : 9.2890E01 1.0570E02 3.6875E02 1.7613E02 1.3000E02
-VAPORPRESSURE             : 4.7889E00 2.4806E-02 1.0092E-04 2.8717E-05 6.9330E-04
-SOLUBILITY                : 2.3072E01 3.4655E02 5.3424E-06 8.2596E00 5.1000E04
-BIOCOE                    : 1.0000E-01 1.0000E-01 1.0488E-02 2.9389E-02 5.0000E-03
+ANALYTEPERCENTAGE         : 1.0000E-01 2.0300E01 1.0100E00 7.8570E01 2.0000E-02 
+MOLEWEIGHT                : 3.7000E01 8.8119E01 1.0438E02 2.1258E02 1.3000E02
+VAPORPRESSURE             : 2.9640E01 2.6817E-01 4.4773E-02 5.3219E-05 6.9330E-04
+SOLUBILITY                : 4.0000E01 4.0322E01 6.2063E02 2.8271E00 5.1000E04
+BIOCOE                    : 1.000E-01 9.9690E-02 1.0000E-01 1.5692E-02 5.0000E-03
 
 !!! ** OIL_EMULSIFICATION [1] **
 ! EMULSIFICATIONMETHOD [] Shihan says to see MOHID docs for refs [Tested with Mackay and Fingas]
-! EMULSPARAMETER       [1.6E-6]           Water Uptake Parameter for Mackay's emulsification method
-! CEMULS               [1.0E-6 -- 2.0E-6] % Percent of evaporated oil before emulsification begins
+! EMULSPARAMETER       [1.6E-6]           Water Uptake Parameter for Mackay's emulsification method 
+! CEMULS               [1.0E-6 -- 2.0E-6] % Percent of evaporated oil before emulsification begins 
 ! MAXVWATERCONTENT     [null_real]          Maximum % Volume Water Content
 
-EMULSIFICATIONMETHOD      : Mackay
-EMULSPARAMETER            : 1.6E-6
-CEMULS                    : 1.5E-6
-MAXVWATERCONTENT          : 62
+EMULSIFICATIONMETHOD      : Mackay        
+EMULSPARAMETER            : 1.6E-6       
+CEMULS                    : 1.5E-06      
+MAXVWATERCONTENT          : 40         
 
 ! the following 4 are required if OIL_EMULSIFICATION: Fingas or Rasmussen
-ASPHALTENECONTENT         : 5
-WAXCONTENT                : 2.9
-RESINCONTENT              : 9
-SATURATECONTENT           : 52
+ASPHALTENECONTENT         : 12.9
+WAXCONTENT                : 1.5
+RESINCONTENT              : 13.3
+SATURATECONTENT           : 36.6
 
 !!! ** OIL_DISPERSION [1] **
 ! DISPERSIONMETHOD     [] Options: NewDispersion, Delvigne, Mackay
@@ -216,7 +214,7 @@ SATURATECONTENT           : 52
 ! OWINTERFACIALTENSION  [] Oil-Water Interfacial Tension (Dyne/cm)
 
 DISPERSIONMETHOD          : NewDispersion
-OWINTERFACIALTENSION      : 19.9
+OWINTERFACIALTENSION      : 16.3
 
 !!! ** OIL_DISSOLUTION [1] **
 DISSOLUTIONMETHOD         : MultiComponents
@@ -228,7 +226,7 @@ DISSOLUTIONMETHOD         : MultiComponents
 NAME                      : oil
 UNITS                     : m3
 AMBIENT_CONC              : 0
-!CONC_VARIABLE             : 1
+!CONC_VARIABLE            : 1
 CONCENTRATION             : 1
 <<EndProperty>>
 

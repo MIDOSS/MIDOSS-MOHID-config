@@ -141,8 +141,7 @@ OIL_SEDIMENTATION         : 0
 
 !~~~ Weathering parameters corresponding to flags ~~~
 !!! ** OIL_SPREADING [1]  **
-SPREADINGMETHOD           : ThicknessGradient
-USERCOEFVELMANCHA         : 10
+SPREADINGMETHOD           : Fay
 
 !!! ** OIL_EVAPORATION [1] **
 ! EVAPORATIONMETHOD [EvaporativeExposure] Options: EvaporativeExposure/PseudoComponents/Fingas
@@ -176,11 +175,11 @@ FINGAS_EVAP_CONST2       : 0.018
 ! SOLUBILITY           [ppm]
 ! BIOCOE               [per day] 
 
-ANALYTEPERCENTAGE         : 7.4000E-01 2.2600 7.1100E01 2.5850E01 3.0000E02
+ANALYTEPERCENTAGE         : 7.4000E-01 2.2600 7.1100E01 2.5850E01 3.0000E-02
 MOLEWEIGHT                : 1.0411E02 1.1975E02 2.1345E02 1.6301E02 1.3000E02
 VAPORPRESSURE             : 1.2948 6.1438E-03 2.0343E-04 4.2091E-06 6.9330E-04
 SOLUBILITY                : 1.3135E01 8.3274E01 8.1207E-06 5.7847 5.1000E04
-BIOCOE                    : 1.0000E-01 1.0000E-01 1.6382E-01 1.9955E-02 5.0000E-03
+BIOCOE                    : 1.0000E-01 1.0000E-01 1.6382E-02 1.9955E-02 5.0000E-03
 
 !!! ** OIL_DISPERSION [1] **
 ! DISPERSIONMETHOD     [] Options: NewDispersion, Delvigne, Mackay
