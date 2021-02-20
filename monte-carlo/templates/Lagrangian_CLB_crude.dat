@@ -1,9 +1,9 @@
 ﻿!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-! Oil type: Cold Lake Blend 
+! Oil type: Cold Lake Blend
 ! Reference Material
 !    - Environment Canada (http://www.etc-cte.ec.gc.ca/databases/OilProperties/pdf/WEB_Cold_Lake_Blend.pdf)
-!    - Evaporation constants and CEMULS from Fed Gov, Properties, Composition and Marine Spill Behavior, 
-!         Fate and Transport of Two Diluted Bitumen Products from the Canadian Oil Sands, 
+!    - Evaporation constants and CEMULS from Fed Gov, Properties, Composition and Marine Spill Behavior,
+!         Fate and Transport of Two Diluted Bitumen Products from the Canadian Oil Sands,
 !         Government of Canada, 2013
 !    - Max. Water Content from Johannessen et al. (2019), https://doi.org/10.1016/j.marpolbul.2019.110691
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -53,13 +53,13 @@ GROUP_ID                  : 1
 NBR_PARTIC                : 10000
 EMISSION_SPATIAL          : Accident
 EMISSION_TEMPORAL         : Instantaneous
-POINT_VOLUME              : 10000 
-ACCIDENT_METHOD           : 1        
+POINT_VOLUME              : {{ spill_volume }}
+ACCIDENT_METHOD           : 1
 
 !~~~ Oil advection/movement specifications ~~~
 ! DEPTH_FROM_FREE_SURFACE  []  Use "0" for surface spills
 ! FLOAT    [] Use "1" to keep all the particles on the surface and "0" to allow them to sink
-! MOVEMENT [] Options are: SullivanAllen or NotRandom.  
+! MOVEMENT [] Options are: SullivanAllen or NotRandom.
 !             If MOVEMENT: SullivanAllen the the following 5 options need to be defined
 ! VARVELHX [0.2]
 ! VARVELH  [0.0]
@@ -71,21 +71,21 @@ ACCIDENT_METHOD           : 1
 
 ! ADVECTION   [1] Move Particle due horizontal velocity: 0 or 1.
 ! ADVECTION_Z [1] Move Particle due vertical velocity: 0 or 1.
-! METHOD_FLOAT_VEL [1] Method to compute rising velocity of submerged droplets 
+! METHOD_FLOAT_VEL [1] Method to compute rising velocity of submerged droplets
 !                      : 1 - SoaresDosSantos, 2 - PADM,  3 - Zheng
 ! AREA_METHOD
-! METHOD_BW_DROPLETS_DIAMETER 
+! METHOD_BW_DROPLETS_DIAMETER
 ! DENSITY_METHOD [2] Way to calculate particle density: 1 - LeendertseState, 2 - UNESCOState
-! WINDDRIFTCORRECTION      
+! WINDDRIFTCORRECTION
 ! WINDDRIFTANGLE [0] Wind Drift Angle Correction due to Coriolis
 ! WINDCOEF       [0.03] Wind transfer Coefficient.  See, e.g., Kim et al. (2014)
 
 ! settings for Stokes Drift
 !   STOKES_DRIFT : 0/1  [0] ! Wave-driven particle velocity (Stokes Drift)
-!   STOKES_DRIFT_METHOD : LonguetHigginsDeep/LonguetHigginsGeneric/ImposedStokes  [LonguetHigginsGeneric]  
-!                         ImposedStokes needs the input Stokes U and Stokes V 
-!                         in wave.dat.  ImposedStokes is the only version we 
-!                         are currently setup to run, using WW3 inputs for 
+!   STOKES_DRIFT_METHOD : LonguetHigginsDeep/LonguetHigginsGeneric/ImposedStokes  [LonguetHigginsGeneric]
+!                         ImposedStokes needs the input Stokes U and Stokes V
+!                         in wave.dat.  ImposedStokes is the only version we
+!                         are currently setup to run, using WW3 inputs for
 !                         Stokes U and Stokes V.
 !   WINDDRIFTCORRECTION     : 0/1/2 [0]     ! 0 = no wind drift correction;
 
@@ -174,7 +174,7 @@ FINGAS_EVAP_CONST2       : -0.045
 ! SOLUBILITY           [ppm]
 ! BIOCOE               [per day]
 
-ANALYTEPERCENTAGE         : 1.0000E-01 2.0300E01 1.0100E00 7.8570E01 2.0000E-02 
+ANALYTEPERCENTAGE         : 1.0000E-01 2.0300E01 1.0100E00 7.8570E01 2.0000E-02
 MOLEWEIGHT                : 3.7000E01 8.8119E01 1.0438E02 2.1258E02 1.3000E02
 VAPORPRESSURE             : 2.9640E01 2.6817E-01 4.4773E-02 5.3219E-05 6.9330E-04
 SOLUBILITY                : 4.0000E01 4.0322E01 6.2063E02 2.8271E00 5.1000E04
@@ -182,14 +182,14 @@ BIOCOE                    : 1.000E-01 9.9690E-02 1.0000E-01 1.5692E-02 5.0000E-0
 
 !!! ** OIL_EMULSIFICATION [1] **
 ! EMULSIFICATIONMETHOD [] Shihan says to see MOHID docs for refs [Tested with Mackay and Fingas]
-! EMULSPARAMETER       [1.6E-6]           Water Uptake Parameter for Mackay's emulsification method 
-! CEMULS               [1.0E-6 -- 2.0E-6] % Percent of evaporated oil before emulsification begins 
+! EMULSPARAMETER       [1.6E-6]           Water Uptake Parameter for Mackay's emulsification method
+! CEMULS               [1.0E-6 -- 2.0E-6] % Percent of evaporated oil before emulsification begins
 ! MAXVWATERCONTENT     [null_real]          Maximum % Volume Water Content
 
-EMULSIFICATIONMETHOD      : Mackay        
-EMULSPARAMETER            : 1.6E-6       
-CEMULS                    : 1.5E-06      
-MAXVWATERCONTENT          : 40         
+EMULSIFICATIONMETHOD      : Mackay
+EMULSPARAMETER            : 1.6E-6
+CEMULS                    : 1.5E-06
+MAXVWATERCONTENT          : 40
 
 ! the following 4 are required if OIL_EMULSIFICATION: Fingas or Rasmussen
 ASPHALTENECONTENT         : 12.9

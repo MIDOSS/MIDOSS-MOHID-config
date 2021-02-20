@@ -50,7 +50,7 @@ GROUP_ID                  : 1
 NBR_PARTIC                : 10000
 EMISSION_SPATIAL          : Accident
 EMISSION_TEMPORAL         : Instantaneous
-POINT_VOLUME              : 10000
+POINT_VOLUME              : {{ spill_volume }}
 ACCIDENT_METHOD           : 1
 
 !~~~ Oil advection/movement specifications ~~~
@@ -154,9 +154,9 @@ EVAPORATIONMETHOD         : Fingas
    !SATURATECONTENT           : 52
 
 ! If EVAPORATIONMETHOD: Fingas, the following 3 parameters are required
-! The evaporation constants shown on the Environment Canada website are 
+! The evaporation constants shown on the Environment Canada website are
 ! slightly different than those listed in Fingas (2015), Chapter 7
-! Handbook of oil spill science and technology, which is  
+! Handbook of oil spill science and technology, which is
 !   Ev = (2.86 + 0.045 * SST) * ln(time)
 ! where  CONST_2 is the multiplier for temperature(SST).  Here, we use
 ! CONST_1 as given in the EC website
@@ -164,7 +164,7 @@ EVAPORATIONMETHOD         : Fingas
    FINGAS_EVAP_EMP_DATA      : 1
    FINGAS_EVAP_CONST1        : 2.64
    FINGAS_EVAP_CONST2        : 0.045
-!   PERC_MASSDIST180          
+!   PERC_MASSDIST180
 
 
 !!! ** OIL_BIODEGREDATION [1] **

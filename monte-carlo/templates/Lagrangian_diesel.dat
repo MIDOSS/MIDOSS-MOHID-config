@@ -2,7 +2,7 @@
 ! Oil type: Diesel (Marine Diesel IKU)
 ! Reference Material
 !    - OSCAR (Biodegradation parameters are from OSCAR database, Marine Diesel (IKU))
-!    - Environment Canada (http://www.etc-cte.ec.gc.ca/databases/oilproperties/default.aspx) 
+!    - Environment Canada (http://www.etc-cte.ec.gc.ca/databases/oilproperties/default.aspx)
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ! This input file defines parameters used in oil weathering and transport
 !
@@ -50,13 +50,13 @@ GROUP_ID                  : 1
 NBR_PARTIC                : 10000
 EMISSION_SPATIAL          : Accident
 EMISSION_TEMPORAL         : Instantaneous
-POINT_VOLUME              : 10000
-ACCIDENT_METHOD           : 1        
+POINT_VOLUME              : {{ spill_volume }}
+ACCIDENT_METHOD           : 1
 
 !~~~ Oil advection/movement specifications ~~~
 ! DEPTH_FROM_FREE_SURFACE  []  Use "0" for surface spills
 ! FLOAT    [] Use "1" to keep all the particles on the surface and "0" to allow them to sink
-! MOVEMENT [] Options are: SullivanAllen or NotRandom.  
+! MOVEMENT [] Options are: SullivanAllen or NotRandom.
 !             If MOVEMENT: SullivanAllen the the following 5 options need to be defined
 ! VARVELHX [0.2]
 ! VARVELH  [0.0]
@@ -68,18 +68,18 @@ ACCIDENT_METHOD           : 1
 
 ! ADVECTION   [1] Move Particle due horizontal velocity: 0 or 1.
 ! ADVECTION_Z [1] Move Particle due vertical velocity: 0 or 1.
-! METHOD_FLOAT_VEL [1] Method to compute rising velocity of submerged droplets 
+! METHOD_FLOAT_VEL [1] Method to compute rising velocity of submerged droplets
 !                      : 1 - SoaresDosSantos, 2 - PADM,  3 - Zheng
 ! AREA_METHOD
-! METHOD_BW_DROPLETS_DIAMETER 
+! METHOD_BW_DROPLETS_DIAMETER
 ! DENSITY_METHOD [2] Way to calculate particle density: 1 - LeendertseState, 2 - UNESCOState
-! WINDDRIFTCORRECTION      
+! WINDDRIFTCORRECTION
 ! WINDDRIFTANGLE [0] Wind Drift Angle Correction due to Coriolis
 ! WINDCOEF       [0.03] Wind transfer Coeficient.  See, e.g., Kim et al. (2014)
 
 ! settings for Stokes Drift
 !   STOKES_DRIFT : 0/1  [0] ! Wave-driven particle velocity (Stokes Drift)
-!   STOKES_DRIFT_METHOD : LonguetHigginsDeep/LonguetHigginsGeneric/ImposedStokes  [LonguetHigginsGeneric]  
+!   STOKES_DRIFT_METHOD : LonguetHigginsDeep/LonguetHigginsGeneric/ImposedStokes  [LonguetHigginsGeneric]
 !                         ImposedStokes needs the input Stokes U and Stokes V
 !                         in wave.dat.  ImposedStokes is the only version we
 !                         are currently setup to run, using WW3 inputs for
@@ -162,20 +162,20 @@ EVAPORATIONMETHOD         : Fingas
 FINGAS_EVAP_EQTYPE       : SquareRoot
 FINGAS_EVAP_EMP_DATA     : 1
 FINGAS_EVAP_CONST1       : 0.31
-FINGAS_EVAP_CONST2       : 0.018   
+FINGAS_EVAP_CONST2       : 0.018
 !PERC_MASSDIST180          : 22
 
 
 !!! ** OIL_BIODEGREDATION [1] **
 ! Biodegredataion groups were derived from OSCAR database by Shihan Li
-! The following coeffients reflect OSCAR oil type named: Marine Diesel (IKU) 
+! The following coeffients reflect OSCAR oil type named: Marine Diesel (IKU)
 ! ANALYTEPERCENTAGE    [%]
-! MOLEWEIGHT           [g/mole] 
+! MOLEWEIGHT           [g/mole]
 ! VAPORPRESSURE        [atm]
 ! SOLUBILITY           [ppm]
-! BIOCOE               [per day] 
+! BIOCOE               [per day]
 
-ANALYTEPERCENTAGE         : 7.4000E-01 2.2600E00 7.1100E01 2.5850E01 3.0000E-02 
+ANALYTEPERCENTAGE         : 7.4000E-01 2.2600E00 7.1100E01 2.5850E01 3.0000E-02
 MOLEWEIGHT                : 1.0411E02 1.1975E02 2.1345E02 1.6301E02 1.3000E02
 VAPORPRESSURE             : 1.2948E00 6.1438E-03 2.0343E-04 4.2091E-06 6.9330E-04
 SOLUBILITY                : 1.3135E01 8.3274E01 8.1207E-06 5.7847E00 5.1000E04
