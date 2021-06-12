@@ -212,7 +212,7 @@ SATURATECONTENT           : 25
 DISPERSIONMETHOD          : NewDispersion
 
 ! This value was NM in Anchorage reference doc., so we are using the value
-! for fresh water at room temperature, given by the bunker-c oil type documented here:
+! for fresh water at room temperature, given by the bunker-c oil type documented here
 ! http://www.etc-cte.ec.gc.ca/databases/OilProperties/pdf/WEB_Bunker_C_Fuel_Oil.pdf
 
 OWINTERFACIALTENSION      : 40
