@@ -1,7 +1,7 @@
 ! Note: Time period must be a multiple of DT
 !
-START                     : {{ start_yyyy_mm_dd }} 00 30 0
-END                       : {{ end_yyyy_mm_dd }} 23 30 0
+START                     : {{ start_yyyy_mm_dd_hh }} 30 0
+END                       : {{ end_yyyy_mm_dd_hh }} 30 0
 DT                        : 3600
 
 VARIABLEDT                : 0
